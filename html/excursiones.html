@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="shortcut icon" href="img/Logo-Buenavista.jpg" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/94ff38bb51.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet" />
+    <title>Buenavista El Chaltén</title>
+</head>
+
+<body>
+    <!---------------- menuBar ------------------->
+    <div class="insideBar">
+        <nav>
+            <a href="../index.html">Buenavista</a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../html/casas.html">Nuestras casas</a></li>
+                    <li><a href="../html/comollegar.html">Cómo llegar</a></li>
+                    <li><a href="#">Qué hacer</a></li>
+                    <ul>
+                        <li><a href="../html/trekking.html">Trekking autoguiado</a></li>
+                        <li><a href="../html/excursiones.html">Excursiones</a></li>
+                    </ul>
+                    <li><a href="../html/blog.html">Blog</a></li>
+                    <li class="ctn"><a href="../html/reserva.html" target="_blank">RESERVA</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </div>
+
+     <!--------------------------- Excursiones -------------------->
+
+     <section class="activity">
+        <div class="parrafoCasas">
+            <h2>Excursiones</h2>
+            <p>Los especialistas en aventura locales te proponen vivir diferentes actividades en este paraíso de
+                montaña. En algunos casos podrás conocer sitios imposibles de llegar de otra manera. De acuerdo a tu
+                edad, tiempo disponible y estado físico, puedes optar desde la visita guiada a sitios históricos hasta
+                una travesía en el Hielo Continental Patagónico Sur.</p>
+        </div>
+        <div class="sectionA">
+            <img src="../img/Rafting-1.jpg" alt="">
+            <div class="description">
+                <h3>Rafting</h3>
+                <p> Adentrate en el Cañadón del Río de las Vueltas y animate a sus rápidos en un entorno geológico
+                    único, donde se mezclan fascinación y adrenalina. Excursión de medio día para los amantes de las
+                    emociones fuertes.</p>
+            </div>
+        </div>
+        <div class="sectionA">
+            <img src="../img/Snorkeling-1.jpg" alt="">
+            <div class="description">
+                <h3>Snorkeling</h3>
+                <p> Es una actividad súper divertida en el Lago del Desierto que se desarrolla con un biólogo guía
+                    local. El agua ronda los 11ºC en el verano, y los trajes de neoprene garantizan una excelente
+                    oportunidad para apreciar la vida y los paisajes subacuáticos de este lago de deshielo glaciar.</p>
+            </div>
+        </div>
+    </section>
+    <div class="buttonBox">
+        <p>Si querés contactar con alguna agencia, hacé click acá</p>
+        <div class="button">
+            <p><a href="https://elchalten.com/v4/es/agencias-de-viajes-en-el-chalten.php" target="_blank">Agencias</a></p>
+        </div>
+    </div>
+
+    <!------------------ Footer ---------------->
+
+    <footer>
+        <div class="informacion">
+            <h3>Para más información</h3>
+            <p>Si necesitas ponerte en contacto con nosotros o tienes <br>
+                alguna duda adicional, contáctanos a través de:</p>
+            <ul>
+                <li><a href=""><i class="fa-solid fa-envelope"></i>buenavistareservas@gmail.com</a></li>
+                <li><a href=""><i class="fa-solid fa-mobile-screen"></i>+54 2 23952800</a></li>
+            </ul>
+        </div>
+        <div class="v-line"></div>
+        <div class="links">
+            <h3>Mantente al día</h3>
+            <p>Encontranos también en:</p>
+            <ul>
+                <li><a href="https://www.booking.com/hotel/ar/buenavista-chalten-casa-de-montaa-a.es-ar.html"
+                        target="_blank"><img src="../img/Booking.png" alt=""></a></li>
+                <li><a href="https://www.airbnb.com.ar/rooms/54038113?adults=2&check_in=2022-11-07&check_out=2022-11-13&federated_search_id=d31c1cb7-3df6-4e09-8958-d22be1be430b&source_impression_id=p3_1659310240_KqBvvUEywt9tpOAS"
+                        target="_blank"><i class="fa-brands fa-airbnb"></i></a></li>
+                <li><a href="https://www.instagram.com/buenavistachalten/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <div id="copyright">
+            Made with <i class="fa fa-heart-o"></i> by Katherine Cantillo
+        </div>
+    </footer>
+
+
+    
+    <!-- -ToggleMenu -->
+    <script>
+
+        var navLinks = document.getElementById("navLinks")
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
