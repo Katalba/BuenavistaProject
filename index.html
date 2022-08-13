@@ -10,32 +10,32 @@
     <script src="https://kit.fontawesome.com/94ff38bb51.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Buenavista El Chaltén</title>
 </head>
 
 <body>
     <!---------------- menuBar ------------------->
     <header>
-        <nav>
+        <div class="container-menu">
             <a href="index.html">Buenavista</a>
-            <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="html/casas.html">Nuestras casas</a></li>
-                    <li><a href="html/comollegar.html">Cómo llegar</a></li>
-                    <li><a href="#">Qué hacer</a></li>
+            <div class="menu">
+                <nav>
                     <ul>
-                        <li><a href="html/trekking.html">Trekking autoguiado</a></li>
-                        <li><a href="html/excursiones.html">Excursiones</a></li>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="html/casas.html">Nuestras casas</a></li>
+                        <li><a href="html/comollegar.html">Cómo llegar</a></li>
+                        <li><a href="#">Qué hacer</a></li>
+                        <ul>
+                            <li><a href="html/trekking.html">Trekking autoguiado</a></li>
+                            <li><a href="html/excursiones.html">Excursiones</a></li>
+                        </ul>
+                        <li><a href="html/blog.html">Blog</a></li>
+                        <li class="ctn"><a href="html/reserva.html" target="_blank">RESERVA</a></li>
                     </ul>
-                    <li><a href="html/blog.html">Blog</a></li>
-                    <li class="ctn"><a href="html/reserva.html" target="_blank">RESERVA</a></li>
-                </ul>
+                </nav>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
-        </nav>
+        </div>
 
         <div class="text-box">
             <h2>Explora y disfruta</h2>
@@ -72,7 +72,7 @@
         </div>
     </section>
 
-<!------------------ Footer ---------------->
+    <!------------------ Footer ---------------->
 
     <footer>
         <div class="informacion">
@@ -103,7 +103,7 @@
     </footer>
 
 
-    
+
     <!-- -ToggleMenu -->
     <script>
 
