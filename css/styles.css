@@ -35,10 +35,6 @@ nav{
     align-items: center;
 }
 
-.nav-links{
-    
-}
-
 .nav-links ul li{
     list-style: none;
     display: inline-block;
@@ -51,6 +47,20 @@ nav{
     text-decoration: none;
     font-size: 18px;
     text-transform: uppercase;
+}
+
+.ctn {
+    border: 1px solid #fff;
+    width: 55px;
+}
+
+.ctn:hover {
+    background: rgba(0, 0, 0, 0.459);
+    transition: 1s;
+}
+
+.sub-menu{
+    display: none;
 }
 
 .text-box{
@@ -160,9 +170,8 @@ h2{
 }
 
 .activity a:hover{
-    color: #0C7C9B;
-    transition: 0.5s;
 }
+    
 
 /************************** Section Media **********************/
 
