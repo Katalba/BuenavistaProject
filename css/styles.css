@@ -49,12 +49,18 @@ nav{
     text-transform: uppercase;
 }
 
+.nav-links > ul > li a:hover{
+    font-size: 20px;
+    transition: 1s;
+}
+
 .ctn {
     border: 1px solid #fff;
     width: 55px;
 }
 
 .ctn:hover {
+    width: 60px;
     background: rgba(0, 0, 0, 0.459);
     transition: 1s;
 }
@@ -472,6 +478,17 @@ footer{
     margin-top: 7rem;
     text-align: justify;
     font-size: 2rem;
+}
+
+.imgCon{
+    margin-top: 2.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.imgCon img{
+    width: auto;
+    max-width: 800px;
 }
 
 /********************** ParrafoCasas media ***********/
