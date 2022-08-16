@@ -20,39 +20,41 @@ header{
     position: relative;
 }
 
-.container-menu{
-    width: 100%;
-    height: 15%;
-    padding: 0px 20px;
-}
-
-.menu{
-    max-width: 1200px;
-    margin: auto;
-    height: 100%;  
+nav > a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Bad Script', cursive;
+    font-size: 40px;
+    font-weight: bold;
 }
 
 nav{
-    height: 100%;
+    display: flex;
+    padding: 1% 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
 }
 
 .nav-links ul li{
     list-style: none;
-    text-decoration: none;
+    display: inline-block;
+    padding: 8px 12px;
     position: relative;
 }
 
-nav > ul > li > a{
-    width: 100%;
-    height: 100%;
-    display: flex;
+.nav-links ul li a{
     color: #fff;
-    align-items: center;
-    padding: 14px;
+    text-decoration: none;
+    font-size: 17px;
     text-transform: uppercase;
 }
 
-.nav-links > ul > li a:hover{
+.nav-links ul li a:hover{
     font-size: 20px;
     transition: 1s;
 }
@@ -66,10 +68,6 @@ nav > ul > li > a{
     width: 60px;
     background: rgba(0, 0, 0, 0.459);
     transition: 1s;
-}
-
-.sub-menu{
-    display: none;
 }
 
 .text-box{
@@ -234,6 +232,10 @@ h2{
         margin: auto;
     }
     .activity img{
+        width: 100%;
+        max-width: 300px;
+    }
+    .activity .imgTrekking{
         width: 100%;
         max-width: 300px;
     }
