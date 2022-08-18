@@ -20,13 +20,25 @@ header{
     position: relative;
 }
 
-nav > a{
+.logo a{
     text-decoration: none;
     color: #fff;
     font-family: 'Bad Script', cursive;
     font-size: 40px;
     font-weight: bold;
 }
+        
+.logo a:hover{
+    transition: 1s;
+    background: linear-gradient(
+          to right, 
+          hsl(5 70% 70%),  
+          hsl(4 100% 95%)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+      }
 
 nav{
     display: flex;
@@ -50,14 +62,22 @@ nav{
 .nav-links ul li a{
     color: #fff;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 18px;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .nav-links ul li a:hover{
-    font-size: 20px;
-    transition: 1s;
-}
+     transition: 1s;
+     background: linear-gradient(
+          to right, 
+          hsl(5 70% 70%),  
+          hsl(4 100% 95%)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+      }
 
 .ctn {
     border: 1px solid #fff;
@@ -65,7 +85,6 @@ nav{
 }
 
 .ctn:hover {
-    width: 60px;
     background: rgba(0, 0, 0, 0.459);
     transition: 1s;
 }
@@ -481,6 +500,7 @@ footer{
 .informacion ul li a {
     text-decoration: none;
     color: #fff;
+    /* font-size: 14px; */
 }
 
 .informacion ul li a:hover {
@@ -746,6 +766,14 @@ footer{
     margin-right: 2rem;
 }
 
+.linea-h{
+    width: 50%;
+    height: 1px;
+    border: transparent;
+    background: rgba(128, 128, 128, 0.418);
+    margin: 5% 0 5% 0;
+}
+
 /************** Casas Media *******************/
 
 @media (max-width: 770px){
@@ -769,7 +797,7 @@ footer{
         width: 100%;
         margin: 0;
     }
-    hr{
+    linea-h{
         display: none;
     }
     }
