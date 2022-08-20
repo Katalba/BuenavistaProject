@@ -317,11 +317,6 @@ footer{
 
 }
 
-@media (max-width: 770px){
-    .container{
-    }
-}
-
 .carousel{
     margin: 5% auto 5% auto;
 }
@@ -340,12 +335,6 @@ footer{
 
 .container-btn a{
     text-decoration: none;
-}
-
-button{
-    width: 120px;
-    height: 30px;
-    margin: 2% auto 5% auto;
 }
 
 .btn{
@@ -421,13 +410,6 @@ button{
 /************** Casas Media **************/
 
 @media (max-width: 770px){
-    .casas{
-        display: flex;
-        flex-direction: column;
-    }
-    .casas img{
-        width: 100%;
-    }
     .servicesContent{
         flex-direction: column;
         width: 100%;
@@ -472,3 +454,114 @@ button{
         justify-content: center;
         margin-top: 5%;
     }
+
+    /************************* RESERVA ********************/
+    .tituloReserva {
+        padding-top: 6.5rem;
+        font-size: 3rem;
+        text-align: center;
+    }
+    
+    .imgReserva {
+        background-image: url(../img/Postal-5.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 15rem;
+    }
+    
+    .cuadro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 77.2vh;
+        background: gray;
+    
+    }
+    
+    .steps {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 4rem;
+        background: black;
+        color: white;
+    }
+    
+    .steps p {
+        font-size: 1.5rem;
+    }
+    
+    form {
+        width: 80%;
+        height: 40rem;
+        background: #fff;
+    }
+    
+    .reserva {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /************************* Reserva Media ********************/
+
+@media (max-width: 770px){
+    .cuadro{
+        height: 85vh;
+    }
+    form{
+        height: 70vh;
+    }
+    .steps{
+        text-align: center;
+    }
+}
+
+/************************* BLOG ********************/
+.principalContent {
+    background-image: url(../img/Postal-2.jpg);
+    width: 100%;
+    height: 60rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contentTwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(128, 128, 128, 0.774);
+    width: 50rem;
+    height: 40rem;
+}
+
+.contentTwo h3 {
+    font-size: 30px;
+    text-align: center;
+    margin: 1.5rem;
+}
+
+.contentTwo ul {
+    list-style: none;
+    margin: 3rem;
+    list-style-position: inside;
+    text-align: justify;
+}
+
+.contentTwo ul li {
+    font-size: 20px;
+}
+
+.contentTwo ul li i {
+    margin-right: 1.5rem;
+}
+
+.postalesW{
+    height: 500px;
+    object-fit: contain;
+}
