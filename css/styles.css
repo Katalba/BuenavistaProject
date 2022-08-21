@@ -66,6 +66,21 @@ header{
         -webkit-text-fill-color: transparent;
 }
 
+.dropdown-menu{
+    background: rgb(141, 134, 134);
+    border-radius: 0;
+}
+
+.dropdown-menu li a{
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.dropdown-menu li a:hover{
+    background: transparent;
+}
+
 .text-box{
     width: 90%;
     color: #fff;
@@ -94,7 +109,7 @@ header{
     font-weight: bold;
 }
 
-/***************************** Home Page Scroll *********************¨*/
+/***************************** Home Page Trekking *********************¨*/
 .text-center{
     text-transform: uppercase;
     margin: 5% 0 5% 0;
@@ -102,20 +117,43 @@ header{
     font-weight: bold;
 }
 
-.activity img{
-    width: auto;
-    height: auto;
-    max-width: 500px;
-    max-height: 500px;
+.activity{
     position: relative;
 }
 
-.activity .imgTrekking{
-    height: auto;
-    width: auto;
-    max-width: 530px;
-    max-height: 530px;
+.activity img:hover ~ p{
+    transition: 0.5s;
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.92),
+    0 0 30px rgba(202,228,225,0.34),
+    0 0 12px rgba(30,132,242,0.52),
+    0 0 21px rgba(30,132,242,0.92),
+    0 0 34px rgba(30,132,242,0.78),
+    0 0 54px rgba(30,132,242,0.92);
+  }
+  to {
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.98),
+    0 0 30px rgba(202,228,225,0.42),
+    0 0 12px rgba(30,132,242,0.58),
+    0 0 22px rgba(30,132,242,0.84),
+    0 0 38px rgba(30,132,242,0.88),
+    0 0 60px rgba(30,132,242,1);
+  }
+
+.activity img{
     position: relative;
+}
+
+.activity p{
+    position: absolute;
+    font-family: 'Aboreto', cursive;
+    font-size: 17px;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
 }
 
 .d-flex{
@@ -129,6 +167,48 @@ header{
     width: 40%;
     height: 2px;
 }
+
+/* *********************** Other Section ***************/
+.blogSection{
+    width: 100%;
+    height: 50vh;
+    position: relative;
+ }
+
+.blogIndex{
+    width: 30vw;
+    height: 50vh;
+    object-fit: cover;
+    filter: sepia(60%);
+ }
+
+ .blogIndex:hover{
+    filter: sepia(0%);
+    transition: 1s;
+ }
+
+ .razones{
+    position: relative;
+ }
+
+ .razones p{
+    position: absolute;
+    font-family: 'Aboreto', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color:#000;
+    text-align: center;
+ }
+
+ .montañaDiv p{
+    color: #fff;
+    transition: 1s;
+ }
+ 
+
 
 /******************************* INSIDE BAR ************************/
 .insideBar{
