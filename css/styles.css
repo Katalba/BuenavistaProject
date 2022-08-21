@@ -546,22 +546,28 @@ footer{
     margin: 1.5rem;
 }
 
-.contentTwo ul {
-    list-style: none;
-    margin: 3rem;
-    list-style-position: inside;
-    text-align: justify;
-}
-
-.contentTwo ul li {
-    font-size: 20px;
-}
-
-.contentTwo ul li i {
-    margin-right: 1.5rem;
-}
-
 .postalesW{
     height: 500px;
     object-fit: contain;
+}
+
+.col-md-6 ul{
+    margin-top: 2rem;
+}
+
+.col-md-6 ul li{
+    list-style: none;
+    margin-bottom: 1rem;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.col-md-6 ul li i{
+    margin-right: 1.5rem;
+}
+
+.recuadroBlog{
+    border: 1px black solid;
+    padding: 5rem;
+    margin-top: 10%;
 }
