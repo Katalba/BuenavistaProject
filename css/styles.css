@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Akshar', sans-serif;
@@ -11,7 +11,7 @@ html {
 
 /************************ Home Page ******************/
 
-header{
+header {
     min-height: 100vh;
     width: 100%;
     background-image: url(../img/Inicio.jpg);
@@ -20,147 +20,144 @@ header{
     position: relative;
 }
 
-.navbar-brand{
+.navbar-brand {
     color: #fff;
     font-family: 'Bad Script', cursive;
     font-size: 40px;
     font-weight: bold;
 }
-        
-.navbar-brand:hover{
-    transition: 1s;
-    background: linear-gradient(
-          to right, 
-          hsl(5 70% 70%),  
-          hsl(4 100% 95%)
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        text-align: center;
-      }
 
-.collapse{
+.navbar-brand:hover {
+    transition: 1s;
+    background: linear-gradient(to right,
+            hsl(5 70% 70%),
+            hsl(4 100% 95%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.collapse {
     display: flex;
     justify-content: flex-end;
 }
 
-.nav-item{
+.nav-item {
     padding: 5px 8px;
 }
 
-.nav-link{
+.nav-link {
     color: #fff;
     font-size: 18px;
     text-transform: uppercase;
     font-weight: bold;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     transition: 1s;
-    background: linear-gradient(
-          to right, 
-          hsl(5 70% 70%),  
-          hsl(4 100% 95%)
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+    background: linear-gradient(to right,
+            hsl(5 70% 70%),
+            hsl(4 100% 95%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.dropdown-menu{
+.dropdown-menu {
     background: rgb(141, 134, 134);
     border-radius: 0;
 }
 
-.dropdown-menu li a{
+.dropdown-menu li a {
     color: #fff;
     font-size: 18px;
     text-transform: uppercase;
 }
 
-.dropdown-menu li a:hover{
+.dropdown-menu li a:hover {
     background: transparent;
 }
 
-.text-box{
+.text-box {
     width: 90%;
     color: #fff;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     text-align: center;
 }
 
-.text-box h1{
+.text-box h1 {
     text-transform: uppercase;
     font-size: 80px;
     font-weight: bold;
 }
 
-.text-box h2{
+.text-box h2 {
     text-transform: uppercase;
     font-size: 25px;
     font-weight: bold;
 }
 
-.text-box h3{
+.text-box h3 {
     text-transform: uppercase;
     font-size: 20px;
     font-weight: bold;
 }
 
 /***************************** Home Page Trekking *********************¨*/
-.text-center{
+.text-center {
     text-transform: uppercase;
     margin: 5% 0 5% 0;
     font-size: 30px;
     font-weight: bold;
 }
 
-.activity{
+.activity {
     position: relative;
 }
 
-.activity img:hover ~ p{
+.activity img:hover~p {
     transition: 0.5s;
     text-shadow:
-    0 0 6px rgba(202,228,225,0.92),
-    0 0 30px rgba(202,228,225,0.34),
-    0 0 12px rgba(30,132,242,0.52),
-    0 0 21px rgba(30,132,242,0.92),
-    0 0 34px rgba(30,132,242,0.78),
-    0 0 54px rgba(30,132,242,0.92);
-  }
-  to {
-    text-shadow:
-    0 0 6px rgba(202,228,225,0.98),
-    0 0 30px rgba(202,228,225,0.42),
-    0 0 12px rgba(30,132,242,0.58),
-    0 0 22px rgba(30,132,242,0.84),
-    0 0 38px rgba(30,132,242,0.88),
-    0 0 60px rgba(30,132,242,1);
-  }
+        0 0 6px rgba(202, 228, 225, 0.92),
+        0 0 30px rgba(202, 228, 225, 0.34),
+        0 0 12px rgba(30, 132, 242, 0.52),
+        0 0 21px rgba(30, 132, 242, 0.92),
+        0 0 34px rgba(30, 132, 242, 0.78),
+        0 0 54px rgba(30, 132, 242, 0.92);
+}
 
-.activity img{
+to {
+    text-shadow:
+        0 0 6px rgba(202, 228, 225, 0.98),
+        0 0 30px rgba(202, 228, 225, 0.42),
+        0 0 12px rgba(30, 132, 242, 0.58),
+        0 0 22px rgba(30, 132, 242, 0.84),
+        0 0 38px rgba(30, 132, 242, 0.88),
+        0 0 60px rgba(30, 132, 242, 1);
+}
+
+.activity img {
     position: relative;
 }
 
-.activity p{
+.activity p {
     position: absolute;
     font-family: 'Aboreto', cursive;
     font-size: 17px;
     font-weight: bold;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     color: #fff;
 }
 
-.d-flex{
+.d-flex {
     justify-content: space-evenly;
 }
 
-.h-line{
+.h-line {
     margin: 10% auto 10% auto;
     border-color: transparent;
     background: rgba(128, 128, 128, 0.664);
@@ -169,64 +166,64 @@ header{
 }
 
 /* *********************** Other Section ***************/
-.blogSection{
+.blogSection {
     width: 100%;
     height: 50vh;
     position: relative;
- }
+}
 
-.blogIndex{
+.blogIndex {
     width: 30vw;
     height: 50vh;
     object-fit: cover;
     filter: sepia(60%);
- }
+}
 
- .blogIndex:hover{
+.blogIndex:hover {
     filter: sepia(0%);
     transition: 1s;
- }
+}
 
- .razones{
+.razones {
     position: relative;
- }
+}
 
- .razones p{
+.razones p {
     position: absolute;
     font-family: 'Aboreto', cursive;
     font-size: 20px;
     font-weight: bold;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    color:#000;
+    transform: translate(-50%, -50%);
+    color: #000;
     text-align: center;
- }
+}
 
- .montañaDiv p{
+.montañaDiv p {
     color: #fff;
     transition: 1s;
- }
- 
+}
+
 
 
 /******************************* INSIDE BAR ************************/
-.insideBar{
-    background:  rgb(141, 134, 134); 
+.insideBar {
+    background: rgb(141, 134, 134);
     width: 100%;
     height: 20vh;
     align-items: center;
     margin-bottom: 5%;
 }
 
-.insideBar:hover{
-    background:  rgb(82, 66, 66); 
+.insideBar:hover {
+    background: rgb(82, 66, 66);
     transition: 1s;
 }
 
 
-/* *********************** Footer ***************/
-footer{
+/* *********************** Footer *************************/
+footer {
     background: rgb(82, 66, 66);
     height: 60vh;
     padding: 3rem;
@@ -288,7 +285,7 @@ footer{
     font-size: 2.5rem;
 }
 
-.links p{
+.links p {
     margin-left: 10rem;
 }
 
@@ -338,86 +335,91 @@ footer{
     position: absolute;
 }
 
-@media(max-width: 770px){
-    .v-line{
+@media(max-width: 770px) {
+    .v-line {
         display: none;
     }
-    footer{
+
+    footer {
         height: auto;
         display: flex;
         flex-direction: column;
     }
-    .informacion{
+
+    .informacion {
         margin-left: 0;
     }
-    .links ul li{
+
+    .links ul li {
         margin: 0;
     }
-    .links h3{
+
+    .links h3 {
         margin: 0;
     }
-    .links p{
+
+    .links p {
         margin: 0;
     }
 }
 
 /******************************** TREKKING ****************/
-.row{
+.row {
     margin: 5% 0 5% 0;
 }
 
-.col-md-6{
+.col-md-6 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-right: 5%;
 }
 
-.imgSin{
+.imgSin {
     padding-right: 0;
 }
 
-.featurette-heading{
+.featurette-heading {
     font-size: 2.5rem;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 5%;
-    text-decoration:underline;
+    text-decoration: underline;
 }
 
-.lead{
+.lead {
     font-size: 2rem;
     text-align: justify;
 }
 
 /******************************** CASAS ****************/
-.casasImg{
+.casasImg {
     height: 500px;
     object-fit: contain;
 
 }
 
-.carousel{
+.carousel {
     margin: 5% auto 5% auto;
 }
 
-.textoCasa{
+.textoCasa {
     font-size: 2rem;
     text-align: justify;
 }
 
-.container-btn p{
+.container-btn p {
     margin: 7% 0 0 0;
     font-size: 15px;
     display: flex;
     justify-content: center;
 }
 
-.container-btn a{
+.container-btn a {
     text-decoration: none;
 }
 
-.btn{
+.btn {
     border-radius: 0%;
     font-size: 14px;
     font-weight: bold;
@@ -479,7 +481,7 @@ footer{
     margin-right: 2rem;
 }
 
-.linea-h{
+.linea-h {
     width: 50%;
     height: 1px;
     border: transparent;
@@ -489,112 +491,167 @@ footer{
 
 /************** Casas Media **************/
 
-@media (max-width: 770px){
-    .servicesContent{
+@media (max-width: 770px) {
+    .servicesContent {
         flex-direction: column;
         width: 100%;
         margin: auto;
-        }
-    .services{
+    }
+
+    .services {
         width: 100%;
         margin: 0;
     }
-    .capacidad{
+
+    .capacidad {
         width: 100%;
         margin: 0;
     }
-    linea-h{
+
+    linea-h {
         display: none;
     }
-    }
+}
 
-    /************************* CÓMO LLEGAR ********************/
-    .container h3{
-        font-size: 2.5rem;
-        text-transform: uppercase;
-        text-decoration: underline;
-        margin: 5% 0 5% 0;
-    }
+/************************* CÓMO LLEGAR ********************/
+.container h3 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin: 5% 0 5% 0;
+}
 
-    .container h3 i{
-        margin-left: 5rem;
-    }
+.container h3 i {
+    margin-left: 5rem;
+}
 
-    .imgCon{
-        display: flex;
-        justify-content: center;
-    }
+.imgCon {
+    display: flex;
+    justify-content: center;
+}
 
-    .imgCon img{
-        margin-top: 5%;
-    }
+.imgCon img {
+    margin-top: 5%;
+}
 
-    .ubication{
-        display: flex;
-        justify-content: center;
-        margin-top: 5%;
-    }
+.ubication {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
 
-    /************************* RESERVA ********************/
-    .tituloReserva {
-        padding-top: 6.5rem;
-        font-size: 3rem;
-        text-align: center;
-    }
-    
-    .imgReserva {
-        background-image: url(../img/Postal-5.webp);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-        height: 15rem;
-    }
-    
+/************************* RESERVA ********************/
+.tituloReserva {
+    font-size: 2.4em;
+    color: white;
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: auto;
+    letter-spacing: 5px;
+    text-align: center;
+    padding: 4.5rem;
+}
+
+.imgReserva {
+    background-image: url(../img/Postal-5.webp);
+    display: block;
+    margin: 0;
+    background-position: bottom center;
+    background-size: cover;
+    height: 18vh;
+}
+
+.cuadro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 75.8vh;
+    background: rgba(128, 128, 128, 0.76);
+
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    background: black;
+    color: white;
+}
+
+.steps p {
+    font-size: 1.5rem;
+}
+
+form {
+    width: 80%;
+    height: 40rem;
+    background: #fff;
+}
+
+.reserva {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.input-group-text {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.box {
+    width: 76%;
+    border: rgba(128, 128, 128, 0.568) 1px solid;
+}
+
+.btn-dark {
+    width: 100%;
+    height: 10%;
+    text-transform: uppercase;
+}
+
+.form-content {
+    width: fit-content;
+    height: 100%;
+    margin: 5%;
+}
+
+.form-control {
+    border-radius: 0;
+    height: 100%;
+}
+
+.col {
+    margin-right: 5px;
+}
+
+select {
+    border-radius: none;
+}
+
+option {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+/************************* Reserva Media ********************/
+
+@media (max-width: 770px) {
     .cuadro {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 77.2vh;
-        background: gray;
-    
-    }
-    
-    .steps {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 4rem;
-        background: black;
-        color: white;
-    }
-    
-    .steps p {
-        font-size: 1.5rem;
-    }
-    
-    form {
-        width: 80%;
-        height: 40rem;
-        background: #fff;
-    }
-    
-    .reserva {
-        display: flex;
-        flex-direction: column;
-    }
-
-    /************************* Reserva Media ********************/
-
-@media (max-width: 770px){
-    .cuadro{
         height: 85vh;
     }
-    form{
+
+    form {
         height: 70vh;
     }
-    .steps{
+
+    .steps {
         text-align: center;
     }
 }
@@ -626,27 +683,27 @@ footer{
     margin: 1.5rem;
 }
 
-.postalesW{
+.postalesW {
     height: 500px;
     object-fit: contain;
 }
 
-.col-md-6 ul{
+.col-md-6 ul {
     margin-top: 2rem;
 }
 
-.col-md-6 ul li{
+.col-md-6 ul li {
     list-style: none;
     margin-bottom: 1rem;
     text-align: justify;
     font-size: 20px;
 }
 
-.col-md-6 ul li i{
+.col-md-6 ul li i {
     margin-right: 1.5rem;
 }
 
-.recuadroBlog{
+.recuadroBlog {
     border: 1px black solid;
     padding: 5rem;
     margin-top: 10%;
