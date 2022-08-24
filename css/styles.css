@@ -9,6 +9,11 @@ html {
 
 }
 
+/************************ Home Page PRUEBA******************/
+.bg-light{
+    background: transparent !important;
+}
+
 /************************ Home Page ******************/
 
 header {
@@ -21,6 +26,7 @@ header {
 }
 
 .navbar-brand {
+    padding-left: 2rem;
     color: #fff;
     font-family: 'Bad Script', cursive;
     font-size: 40px;
@@ -49,6 +55,7 @@ header {
 .nav-link {
     color: #fff;
     font-size: 18px;
+    letter-spacing: 1px;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -111,6 +118,7 @@ header {
     margin: 5% 0 5% 0;
     font-size: 30px;
     font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .activity {
@@ -399,9 +407,9 @@ footer {
 
 }
 
-.carousel {
+/* .carousel {
     margin: 5% auto 5% auto;
-}
+} */
 
 .textoCasa {
     font-size: 2rem;
