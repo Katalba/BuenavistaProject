@@ -21,8 +21,7 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">Buenavista</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -57,6 +56,44 @@
             </div>
         </nav>
     </div>
+
+    <!---------------- menuBar Mobile ------------------->
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title navbar-brand" id="offcanvasWithBothOptionsLabel">Buenavista</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/casas.html">Nuestras casas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/comollegar.html">Cómo llegar</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" data-bs-toggle="dropdown">
+                        Qué hacer
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../html/trekking.html">Trekking auto-guiado</a></li>
+                        <li><a class="dropdown-item" href="../html/excursiones.html">Excursiones</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/reserva.html" target="_blank">Reserva</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
 
     <!---------------------------------- Cómo llegar ----------------------------->
     <section class="container">
@@ -117,7 +154,7 @@
             urbano, a sólo un cruce de calle de menos de 50 mts de la laguna y reserva natural, y a 200 mts de la salida
             de los senderos de trekking.</p>
         </div>
-        
+
         <div class="ubication">
             <iframe class="iframe-fluid mx-auto"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2600.286692404672!2d-72.89542378449613!3d-49.327790783177754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbdbd03e51d82436b%3A0xf838530f4ca2c92a!2sBuenavista%20Chalt%C3%A9n!5e0!3m2!1ses!2sar!4v1659324330569!5m2!1ses!2sar"
