@@ -22,7 +22,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">Buenavista</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -57,6 +57,44 @@
         </div>
     </nav>
 
+<!---------------- menuBar Mobile ------------------->
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title navbar-brand" id="offcanvasWithBothOptionsLabel">Buenavista</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="html/casas.html">Nuestras casas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="html/comollegar.html">Cómo llegar</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" data-bs-toggle="dropdown">
+                        Qué hacer
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="html/trekking.html">Trekking auto-guiado</a></li>
+                        <li><a class="dropdown-item" href="html/excursiones.html">Excursiones</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="html/blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="html/reserva.html" target="_blank">Reserva</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+<!---------------- Carousel NavBar ------------------->
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -104,62 +142,8 @@
         </button>
     </div>
 
-
-
-
-
-
-
-
-
-    <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">Buenavista</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="html/casas.html">Nuestras casas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="html/comollegar.html">Cómo llegar</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="#" data-bs-toggle="dropdown">
-                                Qué hacer
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="html/trekking.html">Trekking auto-guiado</a></li>
-                                <li><a class="dropdown-item" href="html/excursiones.html">Excursiones</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="html/blog.html">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="html/reserva.html" target="_blank">Reserva</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <div class="text-box">
-            <h2>Explora y disfruta</h2>
-            <h1>El Chaltén</h1>
-            <h3>Argentina</h3>
-        </div>
-    </header>
-
     <!------------------ que-hacer ---------------->
+    <div class="marginMobile">
     <section class="container-fluid"">
         <h2 class=" text-center">Qué hacer en El Chaltén</h2>
         <div class="d-flex flex-wrap blogSection">
@@ -223,6 +207,7 @@
             </a>
         </section>
     </section>
+</div>
 
     <!------------------ Footer ---------------->
 

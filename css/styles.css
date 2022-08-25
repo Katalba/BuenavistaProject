@@ -9,20 +9,42 @@ html {
 
 }
 
-/************************ Home Page PRUEBA******************/
+/************************ Home Page******************/
 .bg-light{
-    background: transparent !important;
+    background: rgba(82, 66, 66, 0.534)!important;
 }
 
-/************************ Home Page ******************/
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+}
 
-header {
-    min-height: 100vh;
-    width: 100%;
-    background-image: url(../img/Inicio.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
+.carousel-caption{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.carousel-caption h1 {
+    text-transform: uppercase;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.carousel-caption h2 {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.carousel-caption h3 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.w-100{
+    height: 100vh;
 }
 
 .navbar-brand {
@@ -33,15 +55,35 @@ header {
     font-weight: bold;
 }
 
-.navbar-brand:hover {
-    transition: 1s;
-    background: linear-gradient(to right,
-            hsl(5 70% 70%),
-            hsl(4 100% 95%));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-align: center;
+@media(max-width: 770px){
+    .w-100{
+        object-fit: cover;
+    }
+    .carousel-caption{
+        width: 100%;
+    }
+    .carousel-caption h1{
+        font-size: 50px;
+    }
+    .carousel-caption h2{
+        font-size: 20px;
+    }
+    .carousel-caption h3{
+        font-size: 15px;
+    }
+    .navbar-brand{
+        font-size: 30px;
+    }
 }
+
+.navbar-brand:hover {
+    transition: 0.5s;
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    animation: shine 2s forwards, flicker 3s infinite;
+  }
 
 .collapse {
     display: flex;
@@ -61,13 +103,13 @@ header {
 }
 
 .nav-link:hover {
-    transition: 1s;
-    background: linear-gradient(to right,
-            hsl(5 70% 70%),
-            hsl(4 100% 95%));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+    transition: 0.5s;
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    animation: shine 2s forwards, flicker 3s infinite;
+  }
 
 .dropdown-menu {
     background: rgb(141, 134, 134);
@@ -84,32 +126,9 @@ header {
     background: transparent;
 }
 
-.text-box {
-    width: 90%;
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.text-box h1 {
-    text-transform: uppercase;
-    font-size: 80px;
-    font-weight: bold;
-}
-
-.text-box h2 {
-    text-transform: uppercase;
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.text-box h3 {
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: bold;
+/***************************** Home Page Mobile *********************¨*/
+.offcanvas{
+    background: rgb(82, 66, 66);
 }
 
 /***************************** Home Page Trekking *********************¨*/
@@ -127,23 +146,11 @@ header {
 
 .activity img:hover~p {
     transition: 0.5s;
-    text-shadow:
-        0 0 6px rgba(202, 228, 225, 0.92),
-        0 0 30px rgba(202, 228, 225, 0.34),
-        0 0 12px rgba(30, 132, 242, 0.52),
-        0 0 21px rgba(30, 132, 242, 0.92),
-        0 0 34px rgba(30, 132, 242, 0.78),
-        0 0 54px rgba(30, 132, 242, 0.92);
-}
-
-to {
-    text-shadow:
-        0 0 6px rgba(202, 228, 225, 0.98),
-        0 0 30px rgba(202, 228, 225, 0.42),
-        0 0 12px rgba(30, 132, 242, 0.58),
-        0 0 22px rgba(30, 132, 242, 0.84),
-        0 0 38px rgba(30, 132, 242, 0.88),
-        0 0 60px rgba(30, 132, 242, 1);
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    animation: shine 2s forwards, flicker 3s infinite;
 }
 
 .activity img {
@@ -171,6 +178,21 @@ to {
     background: rgba(128, 128, 128, 0.664);
     width: 40%;
     height: 2px;
+}
+
+@media(max-width: 770px){
+    .text-center{
+        font-size: 25px;
+    }
+    .marginMobile{
+        padding: 10%;
+    }
+    .activity{
+        margin: 5% 0 5% 0;
+    }
+    .activity p{
+        font-size: 14px;
+    }
 }
 
 /* *********************** Other Section ***************/
@@ -213,13 +235,17 @@ to {
     transition: 1s;
 }
 
+@media(max-width: 770px){
+    .razones p{
+        font-size: 14px;
+    }
+}
+
 
 
 /******************************* INSIDE BAR ************************/
 .insideBar {
     background: rgb(141, 134, 134);
-    width: 100%;
-    height: 20vh;
     align-items: center;
     margin-bottom: 5%;
 }
@@ -400,6 +426,16 @@ footer {
     text-align: justify;
 }
 
+.btn-outline-danger{
+    margin-top: 4rem;
+}
+
+@media (max-width: 770px) {
+    .featurette-heading{
+        margin: 15% 0 15% 0;
+    }
+}
+
 /******************************** CASAS ****************/
 .casasImg {
     height: 500px;
@@ -407,9 +443,9 @@ footer {
 
 }
 
-/* .carousel {
-    margin: 5% auto 5% auto;
-} */
+.carousel-dark {
+    margin: 5% auto 0 auto;
+}
 
 .textoCasa {
     font-size: 2rem;
@@ -500,6 +536,7 @@ footer {
 /************** Casas Media **************/
 
 @media (max-width: 770px) {
+
     .servicesContent {
         flex-direction: column;
         width: 100%;
@@ -546,6 +583,13 @@ footer {
     display: flex;
     justify-content: center;
     margin-top: 5%;
+}
+
+@media (max-width: 770px){
+    .container h3{
+        font-size: 2rem;
+        margin: 10% 0 10% 0;
+    } 
 }
 
 /************************* RESERVA ********************/
