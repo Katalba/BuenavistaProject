@@ -1,0 +1,142 @@
+@media (max-width: 770px) {
+    /***************************** Home Page*********************¨*/
+    .w-100 {
+        object-fit: cover;
+    }
+
+    .carousel-caption {
+        width: 100%;
+
+        h1 {
+            font-size: 50px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        h3 {
+            font-size: 15px;
+        }
+    }
+
+    .navbar-brand {
+        font-size: 30px;
+    }
+
+    /***************************** Home Page Mobile *********************¨*/
+    .text-center {
+        font-size: 25px;
+    }
+
+    .marginMobile {
+        padding: 10%;
+    }
+
+    .activity {
+        margin: 5% 0 5% 0;
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    /* *********************** Other Section ***************/
+    .blogIndex {
+        width: 300px;
+        height: 30vh;
+    }
+
+    .razones {
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .section {
+        margin-bottom: 200px;
+    }
+
+    .flex-wrap {
+        margin-bottom: 100px;
+    }
+
+    /* *********************** Footer *************************/
+    .v-line {
+        display: none;
+    }
+
+    footer {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .informacion {
+        margin-left: 0;
+    }
+
+    .links {
+        ul {
+            li {
+                margin: 0;
+            }
+        }
+
+        h3 {
+            margin: 0;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+
+    /******************************** TREKKING ****************/
+    .featurette-heading {
+        margin: 15% 0 15% 0;
+        font-size: 2.2rem;
+    }
+
+    /************** Casas Media **************/
+    .servicesContent {
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+    }
+
+    .services {
+        width: 100%;
+        margin: 0;
+    }
+
+    .capacidad {
+        width: 100%;
+        margin: 0;
+    }
+
+    linea-h {
+        display: none;
+    }
+
+    /************************* CÓMO LLEGAR ********************/
+    .container {
+        h3 {
+            font-size: 2rem;
+            margin: 10% 0 10% 0;
+        }
+    }
+
+    /************************* Reserva Media ********************/
+    .cuadro {
+        height: 85vh;
+    }
+
+    form {
+        height: 70vh;
+    }
+
+    .steps {
+        text-align: center;
+    }
+}

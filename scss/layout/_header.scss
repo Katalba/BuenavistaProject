@@ -1,0 +1,93 @@
+/************************ Home Page******************/
+.bg-light {
+	background: rgba(82, 66, 66, 0.534) !important;
+}
+.carousel-item {
+	height: 100vh;
+	min-height: 300px;
+}
+.carousel-caption {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	h1 {
+		text-transform: uppercase;
+		font-size: 80px;
+		font-weight: bold;
+	}
+	h2 {
+		text-transform: uppercase;
+		font-size: 25px;
+		font-weight: bold;
+	}
+	h3 {
+		text-transform: uppercase;
+		font-size: 20px;
+		font-weight: bold;
+	}
+}
+.w-100 {
+	height: 100vh;
+}
+.navbar-brand {
+	padding-left: 2rem;
+	color: $color_1;
+	font-family: $font-family_2;
+	font-size: 40px;
+	font-weight: bold;
+	&:hover {
+		transition: 0.5s;
+		color: $color_2;
+		text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd, -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd, 0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+		animation: shine 2s forwards, flicker 3s infinite;
+	}
+}
+.collapse {
+	display: flex;
+	justify-content: flex-end;
+}
+.nav-item {
+	padding: 5px 8px;
+}
+.nav-link {
+	color: $color_1;
+	font-size: 18px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-weight: bold;
+	&:hover {
+		transition: 0.5s;
+		color: $color_2;
+		text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd, -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd, 0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+		animation: shine 2s forwards, flicker 3s infinite;
+	}
+}
+.dropdown-menu {
+	background: rgb(141, 134, 134);
+	border-radius: 0;
+	li {
+		a {
+			color: $color_1;
+			font-size: 18px;
+			text-transform: uppercase;
+			&:hover {
+				background: transparent;
+			}
+		}
+	}
+}
+
+/******************************* INSIDE NAV ************************/
+.insideBar {
+	background: rgb(141, 134, 134);
+	align-items: center;
+	margin-bottom: 5%;
+	&:hover {
+		background: rgb(82, 66, 66);
+		transition: 1s;
+	}
+}
+
+.offcanvas{
+    background: rgb(82, 66, 66);
+}

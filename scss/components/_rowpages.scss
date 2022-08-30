@@ -1,0 +1,92 @@
+/******************************** CASAS ****************/
+.casasImg {
+	height: 500px;
+	object-fit: contain;
+}
+.carousel-dark {
+	margin: 5% auto 0 auto;
+}
+.textoCasa {
+	font-size: 2rem;
+	text-align: justify;
+}
+
+/******* Cuadro Servicios ********/
+.servicesContent {
+	display: flex;
+}
+.services {
+	margin: 0 5rem 5rem 10rem;
+	border: 1px $color_3 solid;
+	width: 50%;
+	p {
+		font-size: 2rem;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin: 2rem 0 1rem 5.5rem;
+	}
+}
+.servicesList {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	li {
+		font-weight: bold;
+		font-size: 1.5rem;
+		margin: 1rem;
+		i {
+			margin: 1rem;
+		}
+	}
+}
+.capacidad {
+	margin: 0 5rem 5rem 5rem;
+	height: 20rem;
+	width: 30%;
+	ul {
+		list-style: none;
+		margin: 2rem;
+		li {
+			font-weight: bold;
+			font-size: 1.5rem;
+			margin-bottom: 1rem;
+			i {
+				font-size: 2rem;
+				margin-right: 2rem;
+			}
+		}
+	}
+}
+.linea-h {
+	width: 50%;
+	height: 1px;
+	border: $border-color_1;
+	background: rgba(128, 128, 128, 0.418);
+	margin: 5% 0 5% 0;
+}
+
+/************************* CÓMO LLEGAR ********************/
+.container {
+	h3 {
+		font-size: 2.5rem;
+		text-transform: uppercase;
+		text-decoration: underline;
+		margin: 5% 0 5% 0;
+		i {
+			margin-left: 5rem;
+		}
+	}
+}
+.imgCon {
+	display: flex;
+	justify-content: center;
+	img {
+		margin-top: 5%;
+	}
+}
+.ubication {
+	display: flex;
+	justify-content: center;
+	margin-top: 5%;
+}
+
