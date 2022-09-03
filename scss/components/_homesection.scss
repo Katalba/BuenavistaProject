@@ -6,6 +6,14 @@
 	font-weight: bold;
 	letter-spacing: 1px;
 }
+.text-infoBlog{
+	text-align: center;
+	text-transform: uppercase;
+	margin: 5% 0 5% 0;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
 .activity {
 	position: relative;
 	img {
@@ -74,7 +82,7 @@
 	object-fit: cover;
 }
 .casasBlog{
-	width: 16vw;
+	width: 15vw;
 	height: 25vh;
 	object-fit: cover;
 }
@@ -100,15 +108,30 @@
 	margin-bottom: 70px;
 	p {
 		position: absolute;
-		font-family: $font-family_3;
-		font-size: 20px;
+		font-family: 'Fredericka the Great', cursive;
+		font-size: 30px;
 		font-weight: bold;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		color: $color_3;
+		color: $color_1;
 		text-align: center;
 	}
+	.textPromo{
+		position: relative;
+		font-family: $font-family_1;
+		color: $color_3;
+		font-size: 15px;
+		display: flex;
+		justify-content: center;
+
+	}
+}
+.cuadroPromo{
+	border: 1px solid #000;
+}
+.enlacePromo{
+	margin: 20px 10px 0 10px;
 }
 .montañaDiv {
 	p {

@@ -35,6 +35,14 @@ html {
     font-size: 20px;
     font-weight: bold; }
 
+/************************ CAPTION CAROUSEL POSTALES******************/
+.captionPostal {
+  margin-top: 3rem;
+  text-align: center; }
+  .captionPostal h4 {
+    text-transform: uppercase;
+    font-size: 25px; }
+
 .navbar-brand {
   padding-left: 2rem;
   color: #fff;
@@ -172,6 +180,14 @@ footer {
   font-weight: bold;
   letter-spacing: 1px; }
 
+.text-infoBlog {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 5% 0 5% 0;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px; }
+
 .activity {
   position: relative; }
   .activity img {
@@ -235,7 +251,7 @@ footer {
   object-fit: cover; }
 
 .casasBlog {
-  width: 16vw;
+  width: 15vw;
   height: 25vh;
   object-fit: cover; }
 
@@ -260,14 +276,27 @@ footer {
   margin-bottom: 70px; }
   .cardPage p {
     position: absolute;
-    font-family: "Aboreto", cursive;
-    font-size: 20px;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 30px;
     font-weight: bold;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #000;
+    color: #fff;
     text-align: center; }
+  .cardPage .textPromo {
+    position: relative;
+    font-family: "Akshar", sans-serif;
+    color: #000;
+    font-size: 15px;
+    display: flex;
+    justify-content: center; }
+
+.cuadroPromo {
+  border: 1px solid #000; }
+
+.enlacePromo {
+  margin: 20px 10px 0 10px; }
 
 .montañaDiv p {
   color: #fff;
@@ -632,4 +661,13 @@ option {
   form {
     height: 70vh; }
   .steps {
-    text-align: center; } }
+    text-align: center; }
+  .cardBlog {
+    flex-direction: column; }
+    .cardBlog .cardPage {
+      width: 100%; }
+    .cardBlog .blogPage {
+      width: 100vw;
+      height: 75vh;
+      object-fit: cover;
+      padding: 0 10% 0 10%; } }

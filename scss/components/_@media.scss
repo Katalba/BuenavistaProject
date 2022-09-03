@@ -139,4 +139,16 @@
     .steps {
         text-align: center;
     }
+    .cardBlog{
+        flex-direction: column;
+        .cardPage{
+            width: 100%;
+        }
+        .blogPage{
+            width: 100vw;
+	        height: 75vh;
+	        object-fit: cover;
+            padding: 0 10% 0 10%;
+        }
+    }
 }
