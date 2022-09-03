@@ -14,6 +14,9 @@ html {
 .carousel-item {
   height: 100vh;
   min-height: 300px; }
+  .carousel-item .w-100 {
+    height: 100vh;
+    object-fit: cover; }
 
 .carousel-caption {
   top: 50%;
@@ -31,9 +34,6 @@ html {
     text-transform: uppercase;
     font-size: 20px;
     font-weight: bold; }
-
-.w-100 {
-  height: 100vh; }
 
 .navbar-brand {
   padding-left: 2rem;
@@ -208,6 +208,10 @@ footer {
   height: 50vh;
   position: relative; }
 
+.cardBlog {
+  width: 100%;
+  position: relative; }
+
 .blogIndex {
   width: 30vw;
   height: 50vh;
@@ -217,9 +221,28 @@ footer {
     filter: sepia(0%);
     transition: 1s; }
 
+.blogPage {
+  width: 25vw;
+  height: 75vh;
+  object-fit: cover; }
+
 .razones {
   position: relative; }
   .razones p {
+    position: absolute;
+    font-family: "Aboreto", cursive;
+    font-size: 20px;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    text-align: center; }
+
+.cardPage {
+  position: relative;
+  margin-bottom: 70px; }
+  .cardPage p {
     position: absolute;
     font-family: "Aboreto", cursive;
     font-size: 20px;
@@ -238,11 +261,67 @@ footer {
 .row {
   margin: 5% 0 5% 0; }
 
+.rowBlog {
+  margin: 0; }
+
 .col-md-6 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-right: 5%; }
+
+.cuadroColor {
+  position: relative;
+  margin: 0 5% 0 5%;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #ff70aa 100%); }
+  .cuadroColor h2 {
+    position: absolute;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 40px;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center; }
+
+.c-colorDos {
+  position: relative;
+  margin: 0 5% 0 5%;
+  background-color: #ffffff;
+  background-image: linear-gradient(0deg, #ffffff 5%, #11b19a 24%, #000000 100%); }
+  .c-colorDos h2 {
+    position: absolute;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 45px;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center; }
+
+.cuadroImg {
+  padding: 0 5% 0 5%;
+  position: relative; }
+  .cuadroImg .zic-zac {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover; }
+  .cuadroImg h2 {
+    position: absolute;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 40px;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center; }
+
+.leftBlog {
+  padding-left: 5%; }
 
 .imgSin {
   padding-right: 0; }
@@ -262,26 +341,15 @@ footer {
   margin-top: 4rem; }
 
 /************************* BLOG ********************/
-.principalContent {
-  background-image: url(../img/Postal-2.jpg);
-  width: 100%;
-  height: 60rem;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.contentTwo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: rgba(128, 128, 128, 0.774);
-  width: 50rem;
-  height: 40rem; }
-  .contentTwo h3 {
-    font-size: 30px;
-    text-align: center;
-    margin: 1.5rem; }
+.cuadroImg {
+  position: relative; }
+  .cuadroImg h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .cuadroImg .imgRazones {
+    position: relative; }
 
 .postalesW {
   height: 500px;
@@ -296,11 +364,6 @@ footer {
     font-size: 20px; }
     .col-md-6 ul li i {
       margin-right: 1.5rem; }
-
-.recuadroBlog {
-  border: 1px #000 solid;
-  padding: 5rem;
-  margin-top: 10%; }
 
 /******************************** CASAS ****************/
 .casasImg {
@@ -394,7 +457,6 @@ footer {
   padding: 4.5rem; }
 
 .imgReserva {
-  background-image: url(../img/Postal-5.webp);
   display: block;
   margin: 0;
   background-position: bottom center;
