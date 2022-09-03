@@ -32,6 +32,9 @@
 .d-flex {
 	justify-content: space-evenly;
 }
+.flexSpace{
+	justify-content:center;
+}
 .h-line {
 	margin: 10% auto 10% auto;
 	border-color: $border-color_1;
@@ -64,6 +67,19 @@
 	width: 25vw;
 	height: 75vh;
 	object-fit: cover;
+}
+.blogP-Dos{
+	width: 25vw;
+	height: 75vh;
+	object-fit: cover;
+}
+.casasBlog{
+	width: 16vw;
+	height: 25vh;
+	object-fit: cover;
+}
+.margin-bCasas{
+	padding: 5%;
 }
 .razones {
 	position: relative;

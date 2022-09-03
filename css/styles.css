@@ -195,6 +195,9 @@ footer {
 .d-flex {
   justify-content: space-evenly; }
 
+.flexSpace {
+  justify-content: center; }
+
 .h-line {
   margin: 10% auto 10% auto;
   border-color: transparent;
@@ -225,6 +228,19 @@ footer {
   width: 25vw;
   height: 75vh;
   object-fit: cover; }
+
+.blogP-Dos {
+  width: 25vw;
+  height: 75vh;
+  object-fit: cover; }
+
+.casasBlog {
+  width: 16vw;
+  height: 25vh;
+  object-fit: cover; }
+
+.margin-bCasas {
+  padding: 5%; }
 
 .razones {
   position: relative; }
@@ -365,6 +381,7 @@ footer {
     .col-md-6 ul li i {
       margin-right: 1.5rem; }
 
+/************************* PROMO BLOG ****************/
 /******************************** CASAS ****************/
 .casasImg {
   height: 500px;
