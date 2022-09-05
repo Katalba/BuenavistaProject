@@ -2,27 +2,33 @@
 .bg-light {
 	background: rgba(82, 66, 66, 0.534) !important;
 }
+
 .carousel-item {
 	height: 100vh;
 	min-height: 300px;
-    .w-100 {
-        height: 100vh;
-        object-fit: cover;
-        
-    }
+
+	.w-100 {
+		height: 100vh;
+		object-fit: cover;
+
+	}
 }
+
 .carousel-caption {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+
 	h1 {
-		@include text($size:80px)
+		@include text($size: 80px)
 	}
+
 	h2 {
-		@include text($size:25px)
+		@include text($size: 25px)
 	}
+
 	h3 {
-		@include text($size:20px)
+		@include text($size: 20px)
 	}
 }
 
@@ -30,6 +36,7 @@
 .captionPostal {
 	margin-top: 3rem;
 	text-align: center;
+
 	h4 {
 		text-transform: uppercase;
 		font-size: 25px;
@@ -37,38 +44,46 @@
 }
 
 .navbar-brand {
-	padding-left: 2rem;
+	padding-left: map-get($styleText, size);
 	color: $color_1;
 	font-family: $font-family_2;
 	font-size: 40px;
 	font-weight: bold;
+
 	&:hover {
 		@include hover;
 	}
 }
+
 .collapse {
 	display: flex;
 	justify-content: flex-end;
 }
+
 .nav-item {
 	padding: 5px 8px;
 }
+
 .nav-link {
 	color: $color_1;
 	letter-spacing: 1px;
-	@include text($size:18px);
+	@include text($size: 18px);
+
 	&:hover {
 		@include hover;
 	}
 }
+
 .dropdown-menu {
 	background: rgb(141, 134, 134);
 	border-radius: 0;
+
 	li {
 		a {
 			color: $color_1;
 			font-size: 18px;
 			text-transform: uppercase;
+
 			&:hover {
 				background: transparent;
 			}
@@ -78,15 +93,16 @@
 
 /******************************* INSIDE NAV ************************/
 .insideBar {
-	background: rgb(141, 134, 134);
+	background: $color_footer;
 	align-items: center;
-	margin-bottom: 5%;
+	margin-bottom: map-get($styleText, mgAlone);
+
 	&:hover {
 		background: $color_footer;
 		transition: 1s;
 	}
 }
 
-.offcanvas{
-    background: $color_footer;
+.offcanvas {
+	background: $color_footer;
 }

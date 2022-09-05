@@ -7,65 +7,82 @@ footer {
 	font-size: 1.5rem;
 	color: $color_1;
 	display: grid;
-	grid-template-areas: "informacion links" "informacion links" "copyright copyright";
+	grid-template-areas: "informacion links""informacion links""copyright copyright";
 	gap: 5rem;
 }
+
 .informacion {
 	margin-left: 5rem;
 	grid-area: informacion;
 	text-transform: uppercase;
+
 	h3 {
-		margin-bottom: 2rem;
+		margin-bottom: map-get($styleText, size);
 		font-size: 2.5rem;
 	}
+
 	ul {
 		margin-top: 3rem;
 		list-style: none;
+
 		li {
 			margin-top: 1.5rem;
+
 			a {
 				text-decoration: none;
 				color: $color_1;
+
 				&:hover {
 					color: $color_4;
 					transition: 0.5s;
 				}
 			}
+
 			i {
 				margin-right: 1.5rem;
-				font-size: 2rem;
+				font-size: map-get($styleText, size);
 			}
 		}
 	}
 }
+
 .links {
 	grid-area: links;
 	text-transform: uppercase;
+
 	h3 {
 		margin-left: 10rem;
-		margin-bottom: 2rem;
+		margin-bottom: map-get($styleText, size);
+		;
 		font-size: 2.5rem;
 	}
+
 	p {
 		margin-left: 10rem;
 	}
+
 	ul {
 		@include flex;
 		list-style: none;
+
 		li {
-			text-align: center;
-			margin: 2rem;
+			text-align: map-get($styleText, align);
+			margin: map-get($styleText, size);
+
 			a {
 				text-decoration: none;
 				color: $color_1;
 			}
+
 			i {
 				margin-right: 4rem;
 				font-size: 4rem;
+
 				&:hover {
 					color: $color_4;
 				}
 			}
+
 			img {
 				height: auto;
 				width: auto;
@@ -75,11 +92,13 @@ footer {
 		}
 	}
 }
+
 #copyright {
 	margin-top: -2rem;
 	grid-area: copyright;
-	text-align: center;
+	text-align: map-get($styleText, align);
 }
+
 .v-line {
 	border-left: 1px solid $color_1;
 	height: 25rem;

@@ -1,121 +1,131 @@
 /******************************** TREKKING ****************/
 .row {
-	margin: 5% 0 5% 0;
+	margin: map-get($styleText, margin360);
 }
-.rowBlog{
+
+.rowBlog {
 	margin: 0;
 }
+
 .col-md-6 {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	padding-right: 5%;
+	padding-right: map-get($styleText, mgAlone);
 }
-.cuadroColor{
+
+.cuadroColor {
 	position: relative;
-	margin: 0 5% 0 5%;
+	margin: map-get($styleText, margin360);
 	background-color: #4158D0;
 	background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #ff70aa 100%);
-	h2{
+
+	h2 {
+		@include textCenter;
 		position: absolute;
 		font-family: 'Fredericka the Great', cursive;
 		font-size: 40px;
 		font-weight: bold;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
 		color: $color_1;
 		text-align: center;
 	}
 
 }
-.c-colorDos{
+
+.c-colorDos {
 	position: relative;
-	margin: 0 5% 0 5%;
+	margin: map-get($styleText, margin360);
 	background-color: #ffffff;
 	background-image: linear-gradient(0deg, #ffffff 5%, #11b19a 24%, #000000 100%);
-	h2{
+
+	h2 {
+		@include textCenter;
 		position: absolute;
 		font-family: 'Fredericka the Great', cursive;
 		font-size: 45px;
 		font-weight: bold;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
 		color: $color_1;
-		text-align: center;
+		text-align: map-get($styleText, align);
 	}
 
 }
-.cuadroImg{
-	padding: 0 5% 0 5%;
+
+.cuadroImg {
+	padding: map-get($styleText, margin360);
 	position: relative;
-	.zic-zac{
-		@include img($ancho:(100%), $alto:(50vh));
+
+	.zic-zac {
+		@include img($ancho: (100%), $alto: (50vh));
 	}
-	h2{
+
+	h2 {
+		@include textCenter;
 		position: absolute;
 		font-family: 'Fredericka the Great', cursive;
 		font-size: 40px;
 		font-weight: bold;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
 		color: $color_1;
-		text-align: center;
+		text-align: map-get($styleText, align);
 	}
 }
-.leftBlog{
-	padding-left: 5%;
+
+.leftBlog {
+	padding-left: map-get($styleText, mgAlone);
 }
+
 .imgSin {
 	padding-right: 0;
 }
+
 .featurette-heading {
 	font-size: 2.5rem;
-	text-align: center;
+	text-align: map-get($styleText, align);
 	text-transform: uppercase;
-	margin-bottom: 5%;
+	margin-bottom: map-get($styleText, mgAlone);
 	text-decoration: underline;
 }
+
 .lead {
-	font-size: 2rem;
+	font-size: map-get($styleText, size);
 	text-align: justify;
 }
+
 .btn-outline-danger {
 	margin-top: 4rem;
 }
 
 /************************* BLOG ********************/
-.cuadroImg{
+.cuadroImg {
 	position: relative;
-	h3{
+
+	h3 {
+		@include textCenter;
 		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
 	}
-	.imgRazones{
+
+	.imgRazones {
 		position: relative;
 	}
 }
+
 .postalesW {
 	height: 500px;
 	object-fit: contain;
 }
+
 .col-md-6 {
 	ul {
 		margin-top: 2rem;
+
 		li {
 			list-style: none;
 			margin-bottom: 1rem;
 			text-align: justify;
 			font-size: 20px;
+
 			i {
 				margin-right: 1.5rem;
 			}
 		}
 	}
 }
-
-/************************* PROMO BLOG ****************/

@@ -1,16 +1,16 @@
 /************************* RESERVA ********************/
 .tituloReserva {
+	@extend .rowBlog;
 	@include text($size:2.4em);
 	color: $color_1;
-	margin: 0;
 	width: auto;
 	letter-spacing: 5px;
-	text-align: center;
+	text-align:  map-get($styleText, align);
 	padding: 4.5rem;
 }
 .imgReserva {
+	@extend .rowBlog;
 	display: block;
-	margin: 0;
 	background-position: bottom center;
 	background-size: cover;
 	height: 18vh;
@@ -58,7 +58,7 @@ form {
 .form-content {
 	width: fit-content;
 	height: 100%;
-	margin: 5%;
+	margin: map-get($styleText, mgAlone);
 }
 .form-control {
 	border-radius: 0;

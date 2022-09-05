@@ -7,7 +7,7 @@
 	margin: 5% auto 0 auto;
 }
 .textoCasa {
-	font-size: 2rem;
+	font-size:  map-get($styleText, size);
 	text-align: justify;
 }
 
@@ -43,14 +43,14 @@
 	width: 30%;
 	ul {
 		list-style: none;
-		margin: 2rem;
+		margin: map-get($styleText, size);
 		li {
 			font-weight: bold;
 			font-size: 1.5rem;
 			margin-bottom: 1rem;
 			i {
-				font-size: 2rem;
-				margin-right: 2rem;
+				font-size: map-get($styleText, size);
+				margin-right: map-get($styleText, size);
 			}
 		}
 	}
@@ -60,7 +60,7 @@
 	height: 1px;
 	border: $border-color_1;
 	background: rgba(128, 128, 128, 0.418);
-	margin: 5% 0 5% 0;
+	margin: map-get($styleText, margin360);
 }
 
 /************************* CÓMO LLEGAR ********************/
@@ -69,7 +69,7 @@
 		font-size: 2.5rem;
 		text-transform: uppercase;
 		text-decoration: underline;
-		margin: 5% 0 5% 0;
+		margin: map-get($styleText, margin360);
 		i {
 			margin-left: 5rem;
 		}
@@ -79,13 +79,13 @@
 	display: flex;
 	justify-content: center;
 	img {
-		margin-top: 5%;
+		margin-top: map-get($styleText, mgAlone);
 	}
 }
 .ubication {
 	display: flex;
 	justify-content: center;
-	margin-top: 5%;
+	margin-top: map-get($styleText, mgAlone);
 }
 
 
