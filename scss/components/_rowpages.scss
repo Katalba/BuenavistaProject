@@ -20,9 +20,7 @@
 	border: 1px $color_3 solid;
 	width: 50%;
 	p {
-		font-size: 2rem;
-		font-weight: bold;
-		text-transform: uppercase;
+		@include text($size:(2rem));
 		margin: 2rem 0 1rem 5.5rem;
 	}
 }

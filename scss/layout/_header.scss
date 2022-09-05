@@ -16,19 +16,13 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	h1 {
-		text-transform: uppercase;
-		font-size: 80px;
-		font-weight: bold;
+		@include text($size:80px)
 	}
 	h2 {
-		text-transform: uppercase;
-		font-size: 25px;
-		font-weight: bold;
+		@include text($size:25px)
 	}
 	h3 {
-		text-transform: uppercase;
-		font-size: 20px;
-		font-weight: bold;
+		@include text($size:20px)
 	}
 }
 
@@ -49,10 +43,7 @@
 	font-size: 40px;
 	font-weight: bold;
 	&:hover {
-		transition: 0.5s;
-		color: $color_2;
-		text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd, -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd, 0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
-		animation: shine 2s forwards, flicker 3s infinite;
+		@include hover;
 	}
 }
 .collapse {
@@ -64,15 +55,10 @@
 }
 .nav-link {
 	color: $color_1;
-	font-size: 18px;
 	letter-spacing: 1px;
-	text-transform: uppercase;
-	font-weight: bold;
+	@include text($size:18px);
 	&:hover {
-		transition: 0.5s;
-		color: $color_2;
-		text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd, -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd, 0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
-		animation: shine 2s forwards, flicker 3s infinite;
+		@include hover;
 	}
 }
 .dropdown-menu {
@@ -96,11 +82,11 @@
 	align-items: center;
 	margin-bottom: 5%;
 	&:hover {
-		background: rgb(82, 66, 66);
+		background: $color_footer;
 		transition: 1s;
 	}
 }
 
 .offcanvas{
-    background: rgb(82, 66, 66);
+    background: $color_footer;
 }

@@ -1,6 +1,6 @@
 /* *********************** Footer *************************/
 footer {
-	background: rgb(82, 66, 66);
+	background: $color_footer;
 	height: 60vh;
 	padding: 3rem;
 	margin-top: 10rem;
@@ -50,10 +50,8 @@ footer {
 		margin-left: 10rem;
 	}
 	ul {
+		@include flex;
 		list-style: none;
-		display: flex;
-		justify-content: center;
-		align-items: center;
 		li {
 			text-align: center;
 			margin: 2rem;
