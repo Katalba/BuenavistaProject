@@ -1,4 +1,5 @@
 @media (max-width: 770px) {
+
     /***************************** Home Page*********************¨*/
     .w-100 {
         object-fit: cover;
@@ -79,7 +80,7 @@
     .links {
         ul {
             li {
-                margin: 0; 
+                margin: 0;
             }
         }
 
@@ -88,7 +89,7 @@
         }
 
         p {
-           margin: 0;
+            margin: 0;
         }
     }
 
@@ -139,22 +140,38 @@
     .steps {
         text-align: center;
     }
-    .cardBlog{
+
+    .cardBlog {
         flex-direction: column;
-        .cardPage{
+
+        .cardPage {
             width: 100%;
         }
-        .blogPage{
+
+        .blogPage {
             width: 100vw;
-	        height: 75vh;
-	        object-fit: cover;
+            height: 75vh;
+            object-fit: cover;
             padding: 0 10% 0 10%;
         }
     }
-/************************* PROMO BLOG ********************/
-    .casasBlog{
+
+    /************************* PROMO BLOG ********************/
+    .casasBlog {
         width: 100%;
         height: 30vh;
     }
 }
+.cards{
+   
+    .card{
+        width: 100%;
+    
+    }  
+}
 
+//encabezado blog
+
+.encabezadoB h2 {
+    text-align: center;
+}

@@ -3,11 +3,13 @@
 	height: 500px;
 	object-fit: contain;
 }
+
 .carousel-dark {
 	margin: 5% auto 0 auto;
 }
+
 .textoCasa {
-	font-size:  map-get($styleText, size);
+	font-size: map-get($styleText, size);
 	text-align: justify;
 }
 
@@ -15,39 +17,48 @@
 .servicesContent {
 	display: flex;
 }
+
 .services {
 	margin: 0 5rem 5rem 10rem;
 	border: 1px $color_3 solid;
 	width: 50%;
+
 	p {
-		@include text($size:(2rem));
+		@include text($size: (2rem));
 		margin: 2rem 0 1rem 5.5rem;
 	}
 }
+
 .servicesList {
 	display: flex;
 	flex-wrap: wrap;
 	list-style: none;
+
 	li {
 		font-weight: bold;
 		font-size: 1.5rem;
 		margin: 1rem;
+
 		i {
 			margin: 1rem;
 		}
 	}
 }
+
 .capacidad {
 	margin: 0 5rem 5rem 5rem;
 	height: 20rem;
 	width: 30%;
+
 	ul {
 		list-style: none;
 		margin: map-get($styleText, size);
+
 		li {
 			font-weight: bold;
 			font-size: 1.5rem;
 			margin-bottom: 1rem;
+
 			i {
 				font-size: map-get($styleText, size);
 				margin-right: map-get($styleText, size);
@@ -55,6 +66,7 @@
 		}
 	}
 }
+
 .linea-h {
 	width: 50%;
 	height: 1px;
@@ -70,22 +82,94 @@
 		text-transform: uppercase;
 		text-decoration: underline;
 		margin: map-get($styleText, margin360);
+
 		i {
 			margin-left: 5rem;
 		}
 	}
 }
+
 .imgCon {
 	display: flex;
 	justify-content: center;
+
 	img {
 		margin-top: map-get($styleText, mgAlone);
 	}
 }
+
 .ubication {
 	display: flex;
 	justify-content: center;
 	margin-top: map-get($styleText, mgAlone);
 }
 
+/*************************** PROMO BLOG ****************************/
+.cards{
+    scrollbar-gutter: always;
+    padding: 3rem 0 3rem 2rem;
+    margin: 0;
+    display: flex;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    
+}
+.card {
+	background: $color_1;
+	display: inline-block;
+	text-align: left;
+	transition: all 0.3s 0s ease-in;
+	z-index: 1;
 
+	.card__image-holder {
+		background: rgba(0, 0, 0, 0.1);
+		height: 0;
+		padding-bottom: 75%;
+	}
+
+	.card__image{
+		object-fit: cover;
+	}
+
+	.card-title {
+		background: $color_1;
+		padding: 6px 15px 10px;
+		position: relative;
+		z-index: 0;
+
+		a.toggle-info {
+			border-radius: 32px;
+			height: 32px;
+			padding: 0;
+			position: absolute;
+			right: 15px;
+			top: 10px;
+			width: 32px;
+		}
+
+		h2 {
+			font-size: 24px;
+			font-weight: 700;
+			letter-spacing: -0.05em;
+			margin: 0;
+			padding: 0;
+		}
+
+		small {
+			display: block;
+			font-size: 18px;
+			font-weight: 600;
+			letter-spacing: -0.025em;
+		}
+	}
+	div.card-flap {
+		background: $color_1;
+		transform: rotateX(0deg);
+	  }
+	  div.flap1 {
+		transition: all 0.3s 0s ease-out;
+	  }
+	  div.flap2 {
+		transition: all 0.3s 0.2s ease-out;
+	  }
+	}

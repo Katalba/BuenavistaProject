@@ -9,9 +9,8 @@
 	padding: 4.5rem;
 }
 .imgReserva {
+	background: url(../../img/panoTres.jpg);
 	@extend .rowBlog;
-	display: block;
-	background-position: bottom center;
 	background-size: cover;
 	height: 18vh;
 }

@@ -8,7 +8,7 @@ $font-family_2: 'Bad Script', cursive;
 $font-family_3: 'Aboreto', cursive;
 $border-color_1: transparent;
 
-/***************************** MIXIN *******************/
+//MIXIN/
 @mixin flex{
     display: flex;
 	justify-content: center;
@@ -39,7 +39,6 @@ $border-color_1: transparent;
 	transform: translate(-50%, -50%);
 }
 
-/***************************** MAPS *******************/
 $blog:(blogPage, blogP-Dos);
 
 // MAP GET

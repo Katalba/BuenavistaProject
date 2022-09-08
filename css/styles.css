@@ -1,6 +1,4 @@
 @charset "UTF-8";
-/***************************** MIXIN *******************/
-/***************************** MAPS *******************/
 * {
   margin: 0;
   padding: 0;
@@ -229,10 +227,6 @@ footer {
   height: 50vh;
   position: relative; }
 
-.cardBlog {
-  width: 100%;
-  position: relative; }
-
 .blogIndex {
   width: 30vw;
   height: 50vh;
@@ -251,12 +245,20 @@ footer {
 .blogPage {
   width: 25vw;
   height: 75vh;
-  object-fit: cover; }
+  object-fit: cover;
+  filter: sepia(60%); }
+  .blogPage:hover {
+    filter: sepia(0%);
+    transition: 1s; }
 
 .blogP-Dos {
   width: 25vw;
   height: 75vh;
-  object-fit: cover; }
+  object-fit: cover;
+  filter: sepia(60%); }
+  .blogP-Dos:hover {
+    filter: sepia(0%);
+    transition: 1s; }
 
 .margin-bCasas {
   padding: 5%; }
@@ -282,8 +284,8 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
-    font-family: 'Fredericka the Great', cursive;
-    font-size: 30px;
+    font-family: "Aboreto", cursive;
+    font-size: 20px;
     font-weight: bold;
     color: #fff;
     text-align: center; }
@@ -294,12 +296,6 @@ footer {
     font-size: 15px;
     display: flex;
     justify-content: center; }
-
-.cuadroPromo {
-  border: 1px solid #000; }
-
-.enlacePromo {
-  margin: 20px 10px 0 10px; }
 
 .montañaDiv p {
   color: #fff;
@@ -320,7 +316,8 @@ footer {
 
 .cuadroColor {
   position: relative;
-  margin: 5% 0 5% 0;
+  margin: 5%;
+  height: 50vh;
   background-color: #4158D0;
   background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #ff70aa 100%); }
   .cuadroColor h2 {
@@ -336,7 +333,8 @@ footer {
 
 .c-colorDos {
   position: relative;
-  margin: 5% 0 5% 0;
+  margin: 5%;
+  height: 50vh;
   background-color: #ffffff;
   background-image: linear-gradient(0deg, #ffffff 5%, #11b19a 24%, #000000 100%); }
   .c-colorDos h2 {
@@ -351,7 +349,7 @@ footer {
     text-align: center; }
 
 .cuadroImg {
-  padding: 5% 0 5% 0;
+  padding: 5%;
   position: relative; }
   .cuadroImg .zic-zac {
     width: 100%;
@@ -412,6 +410,36 @@ footer {
     font-size: 20px; }
     .col-md-6 ul li i {
       margin-right: 1.5rem; }
+
+*, *:after, *:before {
+  box-sizing: border-box; }
+
+.encabezadoB {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .encabezadoB h1 {
+    text-align: center;
+    margin-bottom: -2%;
+    text-transform: uppercase;
+    color: rgba(177, 174, 174, 0.815);
+    font-size: calc(1em + 10vw);
+    font-weight: 900;
+    text-shadow: -0.0075em 0.0075em 0 #f2f1f2, 0.005em 0.005em 0 #a8a2a9, 0.01em 0.01em 0 #aca6ad, 0.015em 0.015em #b1abb1, 0.02em 0.02em 0 #b5b0b6, 0.025em 0.025em 0 #b9b4ba, 0.03em 0.03em 0 #beb9be, 0.035em 0.035em 0 #c2bec3; }
+  .encabezadoB .dosH1 {
+    font-size: calc(1em + 7vw); }
+  .encabezadoB h2 {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 10%; }
 
 /******************************** CASAS ****************/
 .casasImg {
@@ -492,6 +520,59 @@ footer {
   justify-content: center;
   margin-top: 5%; }
 
+/*************************** PROMO BLOG ****************************/
+.cards {
+  scrollbar-gutter: always;
+  padding: 3rem 0 3rem 2rem;
+  margin: 0;
+  display: flex;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch; }
+
+.card {
+  background: #fff;
+  display: inline-block;
+  text-align: left;
+  transition: all 0.3s 0s ease-in;
+  z-index: 1; }
+  .card .card__image-holder {
+    background: rgba(0, 0, 0, 0.1);
+    height: 0;
+    padding-bottom: 75%; }
+  .card .card__image {
+    object-fit: cover; }
+  .card .card-title {
+    background: #fff;
+    padding: 6px 15px 10px;
+    position: relative;
+    z-index: 0; }
+    .card .card-title a.toggle-info {
+      border-radius: 32px;
+      height: 32px;
+      padding: 0;
+      position: absolute;
+      right: 15px;
+      top: 10px;
+      width: 32px; }
+    .card .card-title h2 {
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: -0.05em;
+      margin: 0;
+      padding: 0; }
+    .card .card-title small {
+      display: block;
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: -0.025em; }
+  .card div.card-flap {
+    background: #fff;
+    transform: rotateX(0deg); }
+  .card div.flap1 {
+    transition: all 0.3s 0s ease-out; }
+  .card div.flap2 {
+    transition: all 0.3s 0.2s ease-out; }
+
 /************************* RESERVA ********************/
 .tituloReserva {
   text-transform: uppercase;
@@ -504,8 +585,7 @@ footer {
   padding: 4.5rem; }
 
 .imgReserva {
-  display: block;
-  background-position: bottom center;
+  background: url(../../img/panoTres.jpg);
   background-size: cover;
   height: 18vh; }
 
@@ -675,3 +755,9 @@ option {
   .casasBlog {
     width: 100%;
     height: 30vh; } }
+
+.cards .card {
+  width: 100%; }
+
+.encabezadoB h2 {
+  text-align: center; }

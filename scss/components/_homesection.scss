@@ -55,11 +55,6 @@
 	position: relative;
 }
 
-.cardBlog {
-	width: 100%;
-	position: relative;
-}
-
 .blogIndex {
 	@include img($ancho: (30vw), $alto: (50vh));
 	filter: sepia(60%);
@@ -75,9 +70,15 @@
 	filter: sepia(60%);
 }
 
+//TAJETAS BLOG
 @each $blogvar in $blog {
 	.#{$blogvar} {
 		@include img($ancho: (25vw), $alto: (75vh));
+		filter: sepia(60%);
+		&:hover {
+			filter: sepia(0%);
+			transition: 1s;
+		}
 	}
 }
 
@@ -106,8 +107,8 @@
 	p {
 		@include textCenter;
 		position: absolute;
-		font-family: 'Fredericka the Great', cursive;
-		font-size: 30px;
+		font-family: $font-family_3;
+		font-size: 20px;
 		font-weight: bold;
 		color: $color_1;
 		text-align: map-get($styleText, align);
@@ -121,14 +122,6 @@
 		display: flex;
 		justify-content: center;
 	}
-}
-
-.cuadroPromo {
-	border: 1px solid #000;
-}
-
-.enlacePromo {
-	margin: 20px 10px 0 10px;
 }
 
 .montañaDiv {
