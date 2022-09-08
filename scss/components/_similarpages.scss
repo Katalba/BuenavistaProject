@@ -24,11 +24,16 @@
 	h2 {
 		@include textCenter;
 		position: absolute;
-		font-family: 'Fredericka the Great', cursive;
-		font-size: 40px;
+		font-family: $font-family_3;
+		font-size: 25px;
 		font-weight: bold;
-		color: $color_1;
-		text-align: center;
+		text-align: map-get($styleText, align);
+		letter-spacing:0.2em;
+  	-webkit-text-fill-color: transparent;
+  	-webkit-text-stroke-width: 3px;
+ 	-webkit-text-stroke-color: white;
+  		text-shadow: 
+				8px 8px #17C5D5;
 	}
 
 }
@@ -63,11 +68,16 @@
 	h2 {
 		@include textCenter;
 		position: absolute;
-		font-family: 'Fredericka the Great', cursive;
-		font-size: 40px;
+		font-family: $font-family_3;
+		font-size: 25px;
 		font-weight: bold;
-		color: $color_1;
 		text-align: map-get($styleText, align);
+		letter-spacing:0.2em;
+  	-webkit-text-fill-color: transparent;
+  	-webkit-text-stroke-width: 3px;
+ 	-webkit-text-stroke-color: white;
+  		text-shadow: 
+				8px 8px #17C5D5;
 	}
 }
 

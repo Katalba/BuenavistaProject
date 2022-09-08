@@ -287,8 +287,12 @@ footer {
     font-family: "Aboreto", cursive;
     font-size: 20px;
     font-weight: bold;
-    color: #fff;
-    text-align: center; }
+    text-align: center;
+    letter-spacing: 0.1em;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: white;
+    text-shadow: 5px 5px #17C5D5; }
   .cardPage .textPromo {
     position: relative;
     font-family: "Akshar", sans-serif;
@@ -325,11 +329,15 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
-    font-family: 'Fredericka the Great', cursive;
-    font-size: 40px;
+    font-family: "Aboreto", cursive;
+    font-size: 25px;
     font-weight: bold;
-    color: #fff;
-    text-align: center; }
+    text-align: center;
+    letter-spacing: 0.2em;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: white;
+    text-shadow: 8px 8px #17C5D5; }
 
 .c-colorDos {
   position: relative;
@@ -360,11 +368,15 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
-    font-family: 'Fredericka the Great', cursive;
-    font-size: 40px;
+    font-family: "Aboreto", cursive;
+    font-size: 25px;
     font-weight: bold;
-    color: #fff;
-    text-align: center; }
+    text-align: center;
+    letter-spacing: 0.2em;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: white;
+    text-shadow: 8px 8px #17C5D5; }
 
 .leftBlog {
   padding-left: 5%; }

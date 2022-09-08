@@ -103,15 +103,20 @@
 .cardPage {
 	position: relative;
 	margin-bottom: 70px;
-
+	
 	p {
 		@include textCenter;
 		position: absolute;
 		font-family: $font-family_3;
 		font-size: 20px;
 		font-weight: bold;
-		color: $color_1;
 		text-align: map-get($styleText, align);
+		letter-spacing:0.1em;
+  	-webkit-text-fill-color: transparent;
+  	-webkit-text-stroke-width: 3px;
+ 	-webkit-text-stroke-color: white;
+  		text-shadow: 
+				5px 5px #17C5D5;
 	}
 
 	.textPromo {
