@@ -55,33 +55,40 @@ html {
     text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd, -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd, 0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
     animation: shine 2s forwards, flicker 3s infinite; }
 
+.navbar-toggler-icon {
+  filter: invert(100%);
+  width: 2em;
+  height: 2em; }
+
+.navbar-toggler {
+  border: transparent; }
+
 .collapse {
   display: flex;
   justify-content: flex-end; }
 
 .nav-item {
   padding: 5px 8px; }
+  .nav-item .nav-link {
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold; }
+    .nav-item .nav-link:hover {
+      transition: 0.5s;
+      color: #ffe6ff;
+      text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd, -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd, 0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+      animation: shine 2s forwards, flicker 3s infinite; }
 
-.nav-link {
-  color: #fff;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-size: 18px;
-  font-weight: bold; }
-  .nav-link:hover {
-    transition: 0.5s;
-    color: #ffe6ff;
-    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd, -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd, 0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
-    animation: shine 2s forwards, flicker 3s infinite; }
-
-.dropdown-menu {
+.dropdown .dropdown-menu {
   background: #8d8686;
   border-radius: 0; }
-  .dropdown-menu li a {
+  .dropdown .dropdown-menu li a {
     color: #fff;
     font-size: 18px;
     text-transform: uppercase; }
-    .dropdown-menu li a:hover {
+    .dropdown .dropdown-menu li a:hover {
       background: transparent; }
 
 /******************************* INSIDE NAV ************************/
@@ -95,6 +102,12 @@ html {
 
 .offcanvas {
   background: #524242; }
+
+.offcanvas.show {
+  width: 60vw; }
+
+.btn-close {
+  color: #fff; }
 
 /* *********************** Footer *************************/
 footer {
@@ -191,6 +204,7 @@ footer {
 .activity {
   position: relative; }
   .activity img {
+    border-radius: 5px;
     position: relative; }
     .activity img:hover ~ p {
       transition: 0.5s;
@@ -201,12 +215,17 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-transform: uppercase;
-    font-size: 17px;
-    font-weight: bold;
     position: absolute;
     font-family: "Aboreto", cursive;
-    color: #fff; }
+    font-size: 17px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    letter-spacing: 0.1em;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    text-shadow: 3px 3px #21326e; }
 
 .d-flex {
   justify-content: space-evenly; }
@@ -246,8 +265,10 @@ footer {
   width: 25vw;
   height: 75vh;
   object-fit: cover;
-  filter: sepia(60%); }
+  filter: sepia(50%); }
   .blogPage:hover {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+    transform: translateY(-10px) scale(1.02);
     filter: sepia(0%);
     transition: 1s; }
 
@@ -255,8 +276,10 @@ footer {
   width: 25vw;
   height: 75vh;
   object-fit: cover;
-  filter: sepia(60%); }
+  filter: sepia(50%); }
   .blogP-Dos:hover {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+    transform: translateY(-10px) scale(1.02);
     filter: sepia(0%);
     transition: 1s; }
 
@@ -271,28 +294,33 @@ footer {
     transform: translate(-50%, -50%);
     position: absolute;
     font-family: "Aboreto", cursive;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: bold;
     color: #000;
-    text-align: center; }
+    text-align: center;
+    letter-spacing: 0.1em;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    text-shadow: 3px 3px #21326e; }
 
 .cardPage {
   position: relative;
   margin-bottom: 70px; }
   .cardPage p {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 5%;
+    left: 5%;
     position: absolute;
     font-family: "Aboreto", cursive;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: bold;
+    color: #000;
     text-align: center;
     letter-spacing: 0.1em;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;
-    text-shadow: 5px 5px #17C5D5; }
+    text-shadow: 3px 3px #21326e; }
   .cardPage .textPromo {
     position: relative;
     font-family: "Akshar", sans-serif;
@@ -330,14 +358,15 @@ footer {
     transform: translate(-50%, -50%);
     position: absolute;
     font-family: "Aboreto", cursive;
-    font-size: 25px;
+    font-size: 17px;
     font-weight: bold;
+    color: #000;
     text-align: center;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;
-    text-shadow: 8px 8px #17C5D5; }
+    text-shadow: 3px 3px #21326e; }
 
 .c-colorDos {
   position: relative;
@@ -369,14 +398,15 @@ footer {
     transform: translate(-50%, -50%);
     position: absolute;
     font-family: "Aboreto", cursive;
-    font-size: 25px;
+    font-size: 17px;
     font-weight: bold;
+    color: #000;
     text-align: center;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;
-    text-shadow: 8px 8px #17C5D5; }
+    text-shadow: 3px 3px #21326e; }
 
 .leftBlog {
   padding-left: 5%; }
@@ -590,7 +620,7 @@ footer {
   text-transform: uppercase;
   font-size: 2.4em;
   font-weight: bold;
-  color: #fff;
+  color: #ffe6ff;
   width: auto;
   letter-spacing: 5px;
   text-align: center;
@@ -691,7 +721,8 @@ option {
     .carousel-caption h3 {
       font-size: 15px; }
   .navbar-brand {
-    font-size: 30px; }
+    font-size: 25px;
+    padding-left: 0; }
   /***************************** Home Page Mobile *********************¨*/
   .text-center {
     font-size: 25px; }

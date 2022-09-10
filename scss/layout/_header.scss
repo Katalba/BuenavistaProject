@@ -1,5 +1,5 @@
 /************************ Home Page******************/
-.bg-light{
+.bg-light {
 	background: rgba(82, 66, 66, 0.534) !important;
 }
 
@@ -55,6 +55,16 @@
 	}
 }
 
+//HAMB MENU MOBILE
+.navbar-toggler-icon{
+	filter: invert(100%);
+	width: 2em;
+	height: 2em;
+}
+.navbar-toggler {
+	border: transparent;
+}
+
 .collapse {
 	display: flex;
 	justify-content: flex-end;
@@ -62,30 +72,31 @@
 
 .nav-item {
 	padding: 5px 8px;
-}
-
-.nav-link {
-	color: $color_1;
-	letter-spacing: 1px;
-	@include text($size: 18px);
-
-	&:hover {
-		@include hover;
+	.nav-link {
+		color: $color_1;
+		letter-spacing: 1px;
+		@include text($size: 18px);
+	
+		&:hover {
+			@include hover;
+		}
 	}
 }
 
-.dropdown-menu {
-	background: rgb(141, 134, 134);
-	border-radius: 0;
+.dropdown {
+	.dropdown-menu {
+		background: rgb(141, 134, 134);
+		border-radius: 0;
 
-	li {
-		a {
-			color: $color_1;
-			font-size: 18px;
-			text-transform: uppercase;
+		li {
+			a {
+				color: $color_1;
+				font-size: 18px;
+				text-transform: uppercase;
 
-			&:hover {
-				background: transparent;
+				&:hover {
+					background: transparent;
+				}
 			}
 		}
 	}
@@ -105,4 +116,12 @@
 
 .offcanvas {
 	background: $color_footer;
+}
+
+.offcanvas.show {
+	width: 60vw;
+}
+
+.btn-close {
+	color: $color_1;
 }

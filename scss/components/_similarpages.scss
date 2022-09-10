@@ -23,17 +23,7 @@
 
 	h2 {
 		@include textCenter;
-		position: absolute;
-		font-family: $font-family_3;
-		font-size: 25px;
-		font-weight: bold;
-		text-align: map-get($styleText, align);
-		letter-spacing:0.2em;
-  	-webkit-text-fill-color: transparent;
-  	-webkit-text-stroke-width: 3px;
- 	-webkit-text-stroke-color: white;
-  		text-shadow: 
-				8px 8px #17C5D5;
+		@include middleT;
 	}
 
 }
@@ -67,17 +57,7 @@
 
 	h2 {
 		@include textCenter;
-		position: absolute;
-		font-family: $font-family_3;
-		font-size: 25px;
-		font-weight: bold;
-		text-align: map-get($styleText, align);
-		letter-spacing:0.2em;
-  	-webkit-text-fill-color: transparent;
-  	-webkit-text-stroke-width: 3px;
- 	-webkit-text-stroke-color: white;
-  		text-shadow: 
-				8px 8px #17C5D5;
+		@include middleT;
 	}
 }
 

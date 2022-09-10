@@ -2,7 +2,7 @@
 .tituloReserva {
 	@extend .rowBlog;
 	@include text($size:2.4em);
-	color: $color_1;
+	color: $color_2;
 	width: auto;
 	letter-spacing: 5px;
 	text-align:  map-get($styleText, align);
