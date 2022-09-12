@@ -19,7 +19,7 @@ html {
     object-fit: cover; }
 
 .carousel-caption {
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%); }
   .carousel-caption h1 {
@@ -48,12 +48,11 @@ html {
   color: #fff;
   font-family: "Bad Script", cursive;
   font-size: 40px;
-  font-weight: bold; }
+  font-weight: bold;
+  transition: 1.0s ease;
+  filter: invert(10%); }
   .navbar-brand:hover {
-    transition: 0.5s;
-    color: #ffe6ff;
-    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd, -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd, 0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
-    animation: shine 2s forwards, flicker 3s infinite; }
+    transform: scale(1.1); }
 
 .navbar-toggler-icon {
   filter: invert(100%);
@@ -74,12 +73,10 @@ html {
     letter-spacing: 1px;
     text-transform: uppercase;
     font-size: 18px;
-    font-weight: bold; }
+    font-weight: bold;
+    transition: 1.0s ease; }
     .nav-item .nav-link:hover {
-      transition: 0.5s;
-      color: #ffe6ff;
-      text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd, -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd, 0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
-      animation: shine 2s forwards, flicker 3s infinite; }
+      transform: scale(1.1); }
 
 .dropdown .dropdown-menu {
   background: #8d8686;
@@ -205,12 +202,14 @@ footer {
   position: relative; }
   .activity img {
     border-radius: 5px;
+    transition: 1.5s ease;
     position: relative; }
+    .activity img:hover {
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+      transform: translateY(-10px) scale(1.02); }
     .activity img:hover ~ p {
-      transition: 0.5s;
-      color: #ffe6ff;
-      text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd, -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd, 0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
-      animation: shine 2s forwards, flicker 3s infinite; }
+      font-size: 17.5px;
+      transition: 1.5s ease; }
   .activity p {
     top: 50%;
     left: 50%;
@@ -250,7 +249,8 @@ footer {
   width: 30vw;
   height: 50vh;
   object-fit: cover;
-  filter: sepia(60%); }
+  filter: sepia(60%);
+  border-radius: 5px; }
   .blogIndex:hover {
     filter: sepia(0%);
     transition: 1s; }
@@ -265,23 +265,29 @@ footer {
   width: 25vw;
   height: 75vh;
   object-fit: cover;
-  filter: sepia(50%); }
+  filter: sepia(50%);
+  transition: 1.5s ease; }
   .blogPage:hover {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
     transform: translateY(-10px) scale(1.02);
-    filter: sepia(0%);
-    transition: 1s; }
+    filter: sepia(0%); }
+    .blogPage:hover:hover ~ p {
+      font-size: 17.5px;
+      transition: 1.5s ease; }
 
 .blogP-Dos {
   width: 25vw;
   height: 75vh;
   object-fit: cover;
-  filter: sepia(50%); }
+  filter: sepia(50%);
+  transition: 1.5s ease; }
   .blogP-Dos:hover {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
     transform: translateY(-10px) scale(1.02);
-    filter: sepia(0%);
-    transition: 1s; }
+    filter: sepia(0%); }
+    .blogP-Dos:hover:hover ~ p {
+      font-size: 17.5px;
+      transition: 1.5s ease; }
 
 .margin-bCasas {
   padding: 5%; }
@@ -310,6 +316,7 @@ footer {
   .cardPage p {
     top: 5%;
     left: 5%;
+    right: 5%;
     position: absolute;
     font-family: "Aboreto", cursive;
     font-size: 17px;
@@ -367,23 +374,6 @@ footer {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;
     text-shadow: 3px 3px #21326e; }
-
-.c-colorDos {
-  position: relative;
-  margin: 5%;
-  height: 50vh;
-  background-color: #ffffff;
-  background-image: linear-gradient(0deg, #ffffff 5%, #11b19a 24%, #000000 100%); }
-  .c-colorDos h2 {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    font-family: 'Fredericka the Great', cursive;
-    font-size: 45px;
-    font-weight: bold;
-    color: #fff;
-    text-align: center; }
 
 .cuadroImg {
   padding: 5%;
@@ -563,15 +553,21 @@ footer {
   margin-top: 5%; }
 
 /*************************** PROMO BLOG ****************************/
+.contentCards {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .cards {
+  width: 1290px;
   scrollbar-gutter: always;
   padding: 3rem 0 3rem 2rem;
   margin: 0;
   display: flex;
-  overflow-x: scroll;
   -webkit-overflow-scrolling: touch; }
 
 .card {
+  margin: 5px;
   background: #fff;
   display: inline-block;
   text-align: left;
@@ -580,6 +576,7 @@ footer {
   .card .card__image-holder {
     background: rgba(0, 0, 0, 0.1);
     height: 0;
+    margin: 10px;
     padding-bottom: 75%; }
   .card .card__image {
     object-fit: cover; }
@@ -597,14 +594,14 @@ footer {
       top: 10px;
       width: 32px; }
     .card .card-title h2 {
-      font-size: 24px;
+      font-size: 20px;
       font-weight: 700;
       letter-spacing: -0.05em;
       margin: 0;
       padding: 0; }
     .card .card-title small {
       display: block;
-      font-size: 18px;
+      font-size: 12px;
       font-weight: 600;
       letter-spacing: -0.025em; }
   .card div.card-flap {
@@ -615,19 +612,48 @@ footer {
   .card div.flap2 {
     transition: all 0.3s 0.2s ease-out; }
 
+/*************************** ACTIVIDADES PATIO ****************************/
+.patioFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.divPatio {
+  width: 30%; }
+
+.lead-patio {
+  font-size: 2rem;
+  text-align: justify;
+  padding: 5%; }
+
+video {
+  width: 100%;
+  height: 75vh; }
+
+.img-asado {
+  display: flex;
+  flex-direction: column; }
+  .img-asado img {
+    width: 100%;
+    height: 25vh;
+    object-fit: cover; }
+
 /************************* RESERVA ********************/
 .tituloReserva {
   text-transform: uppercase;
   font-size: 2.4em;
   font-weight: bold;
-  color: #ffe6ff;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ffe6ff;
+  text-shadow: 3px 3px #000518;
   width: auto;
   letter-spacing: 5px;
   text-align: center;
   padding: 4.5rem; }
 
 .imgReserva {
-  background: url(../../img/panoTres.jpg);
+  background: url(../../img/panoTres.webp);
   background-size: cover;
   height: 18vh; }
 
@@ -700,6 +726,10 @@ option {
   display: flex;
   justify-content: center; }
 
+.container-btn img {
+  display: flex;
+  justify-content: center; }
+
 .container-btn a {
   text-decoration: none; }
 
@@ -724,10 +754,12 @@ option {
     font-size: 25px;
     padding-left: 0; }
   /***************************** Home Page Mobile *********************¨*/
+  .marginCasasM {
+    margin-top: 250px; }
   .text-center {
     font-size: 25px; }
   .marginMobile {
-    padding: 10%; }
+    padding: 5%; }
   .activity {
     margin: 5% 0 5% 0; }
     .activity p {
@@ -797,10 +829,30 @@ option {
   /************************* PROMO BLOG ********************/
   .casasBlog {
     width: 100%;
-    height: 30vh; } }
-
-.cards .card {
-  width: 100%; }
-
-.encabezadoB h2 {
-  text-align: center; }
+    height: 30vh; }
+  .carousel-item {
+    text-align: center; }
+  .inner-blog {
+    height: 340px; }
+  .inner-casaDos {
+    height: 80vh; }
+  .inner-casaUno {
+    height: 400px; }
+  .encabezadoB h2 {
+    text-align: center; }
+  .cuadroColor {
+    width: 86vw; }
+  .patioFlex {
+    flex-direction: column; }
+  .divPatio {
+    width: 90vw; }
+  video {
+    height: 60vh; }
+  .img-asado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; }
+    .img-asado img {
+      width: 28vw;
+      height: 35vh; } }

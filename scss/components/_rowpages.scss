@@ -105,16 +105,20 @@
 }
 
 /*************************** PROMO BLOG ****************************/
+.contentCards{
+	@include flex;
+}
 .cards{
+	width: 1290px;
     scrollbar-gutter: always;
     padding: 3rem 0 3rem 2rem;
     margin: 0;
     display: flex;
-    overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
     
 }
 .card {
+	margin: 5px;
 	background: $color_1;
 	display: inline-block;
 	text-align: left;
@@ -124,6 +128,7 @@
 	.card__image-holder {
 		background: rgba(0, 0, 0, 0.1);
 		height: 0;
+		margin: 10px;
 		padding-bottom: 75%;
 	}
 
@@ -148,7 +153,7 @@
 		}
 
 		h2 {
-			font-size: 24px;
+			font-size: 20px;
 			font-weight: 700;
 			letter-spacing: -0.05em;
 			margin: 0;
@@ -157,7 +162,7 @@
 
 		small {
 			display: block;
-			font-size: 18px;
+			font-size: 12px;
 			font-weight: 600;
 			letter-spacing: -0.025em;
 		}
@@ -173,3 +178,29 @@
 		transition: all 0.3s 0.2s ease-out;
 	  }
 	}
+	
+/*************************** ACTIVIDADES PATIO ****************************/
+.patioFlex{
+	@include flex;
+}
+.divPatio{
+	width: 30%;
+}
+.lead-patio{
+	font-size: map-get($styleText, size);
+	text-align: justify;
+	padding: 5%;
+}
+video{
+	width: 100%;
+	height: 75vh;
+}
+.img-asado{
+	display: flex;
+	flex-direction: column;
+	img{
+		width: 100%;
+		height: 25vh;
+		object-fit: cover;
+	}
+}

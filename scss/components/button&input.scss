@@ -2,14 +2,18 @@
 .tituloReserva {
 	@extend .rowBlog;
 	@include text($size:2.4em);
-	color: $color_2;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: $color_2;
+	text-shadow:
+		3px 3px #000518;
 	width: auto;
 	letter-spacing: 5px;
 	text-align:  map-get($styleText, align);
 	padding: 4.5rem;
 }
 .imgReserva {
-	background: url(../../img/panoTres.jpg);
+	background: url(../../img/panoTres.webp);
 	@extend .rowBlog;
 	background-size: cover;
 	height: 18vh;
@@ -79,6 +83,11 @@ option {
     margin: 7% 0 0 0;
     font-size: 15px;
     display: flex;
+    justify-content: center;
+}
+
+.container-btn img{
+	display: flex;
     justify-content: center;
 }
 
