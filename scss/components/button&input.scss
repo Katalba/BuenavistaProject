@@ -13,9 +13,10 @@
 	padding: 4.5rem;
 }
 .imgReserva {
-	background: url(../../img/panoTres.webp);
+	background: url(../../img/pano.webp);
 	@extend .rowBlog;
 	background-size: cover;
+	background-position: center;
 	height: 18vh;
 }
 .cuadro {
