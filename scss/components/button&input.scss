@@ -13,10 +13,9 @@
 	padding: 4.5rem;
 }
 .imgReserva {
-	background: url(../../img/Postal-5_39_11zon.webp);
+	background-color: #492b4e;
+	background-image: linear-gradient(43deg, #492b4e 0%, #85b6b0 46%, #ffffff 100%);
 	@extend .rowBlog;
-	background-size: cover;
-	background-position: bottom;
 	height: 18vh;
 }
 .cuadro {
